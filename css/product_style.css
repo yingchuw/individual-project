@@ -1,0 +1,359 @@
+@import url(./reset.css);
+
+*{
+    box-sizing: border-box; 
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Noto Serif TC', 'Noto Serif', serif;
+    font-size: 16px;
+    color: #1C1C1C;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}
+
+a{
+    color: #1C1C1C;;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 3.5em;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px;
+    color: #A6C609;
+    letter-spacing: 5px;
+}
+
+/* ------------------ nav bar -------------------*/
+#header{
+    background-color: whitesmoke;
+    max-width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .header_logo img{
+    display: block;
+    width: 70px;
+}
+
+#header .header_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .header_list ul{
+    display: flex;
+    width: 1100px;
+    justify-content: flex-end;
+}
+
+#header .header_list a{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.header_icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.header_icon i{
+    display: block;
+    font-size: 30px;
+}
+
+.header_list li a{
+    border-bottom:3px solid transparent;
+}
+
+.header_list li:hover a{
+    border-bottom: 3px solid #BF5B04;
+}
+
+/* ------------------ top_banner -------------------*/
+.top_banner{
+    width: 100%;
+    position: relative;
+}
+
+.top_banner img{
+    width: 100%;
+}
+
+.top_banner h2{
+    color: #1C1C1C;
+    text-align: center;
+    position:  absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* ------------------ intro -------------------*/
+.intro h3{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+/* ------------------ product list 橫排 -------------------*/
+
+.productList{
+    margin-top: 30px;
+}
+
+.productList ul{
+    overflow: hidden;
+    display: table;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.productList ul li{
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 1.5;
+}
+
+.productList ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.productList ul li a img{
+    width: 82px; 
+}
+
+.productList ul li a::after{
+    background: url(../Product/godown.svg) no-repeat center top;
+    width: 35px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    content: '';
+    margin-left: -17px;
+}
+
+/* ------------------ product list -------------------*/
+
+.mainProduct{
+    padding: 50px 50px 0 50px;
+}
+
+.mainProduct .item{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.item .itemInnerPic{
+    float: left;
+    width: 475px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.item .itemInnerPic img{
+    width: 65%;
+}
+
+.item .itemInnerText{
+    float: right;
+    margin-right: 45px;
+    width: 470px;
+}
+
+.item .itemInnerText h3{
+    padding: 20px 20px 20px 5px;
+}
+
+.item .itemInnerText p{
+    padding: 5px;
+}
+
+.itemInnerText table tr{
+    display: table-row;
+}
+
+.itemInnerText table tr th{
+    padding: 5px;
+    text-align: left;
+    width: 100px;
+}
+
+.itemInnerTextWarning{
+    color: #fd171a;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.itemInnerPic .sakeume {
+    height: 30%;
+}
+
+.item .itemInnerPic > .sakeume{
+    height: 340px;
+    width: 95px;
+    margin-right: 100px;
+}
+
+.item .itemInnerPic > .whiskyume{
+    height: 340px;
+    width: 95px;
+    margin-right: 100px;
+}
+
+.item .itemInnerPic > .shoume{
+    height: 220px;
+    width: 95px;
+    margin-right: 100px;
+}
+
+.item .itemInnerPic > .awamoriume{
+    height: 210px;
+    width: 100px;
+    margin-right: 100px;
+}
+
+.addToList{
+    padding: 5px;
+}
+.addToList a{
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color:#1C1C1C;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 40px;
+}
+
+.addToList a:hover{
+    background-color:#BF5B04;
+}
+
+.goBackList{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 2px dashed #A6C609;
+}
+
+.goBackList a{
+    float: right;
+}
+
+.goBackList img{
+    width: 45px;
+    height: 30px;
+}
+
+/* ------------------ 推薦喝法 -------------------*/
+.recommand{
+    text-align: center;
+}
+
+.recommandInner{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.recommandInner img{
+    width: 75px;
+    margin: 30px;
+}
+
+.recommand1 img{
+    margin-top: 50px;
+}
+
+.recommand3 img{
+    margin-top: 50px;
+}
+
+.recommandContent div{
+    width: 300px;
+}
+
+.recommand2{
+    border-left: 2px dashed #A6C609;
+    border-right: 2px dashed #A6C609;
+}
+
+.recommandTitle{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.recommandText{
+    padding: 20px;
+}
+
+
+/* --------------- 喝酒不開車 ----------------*/
+.warning{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 60px;
+}
+
+/* ---------------- footer -----------------*/
+.footer_inner{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.footer_inner p{
+    line-height: 30px;
+}
+
+.footer_icon{
+    display: flex;
+}
+
+.footer_inner .footer_icon li a{
+    font-size: 25px;
+    margin-left: 10px;
+}

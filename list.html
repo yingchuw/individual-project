@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅屋 UMEYA</title>
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 導覽列 -->
+        <nav id="header">
+            <div class="header_logo">
+                <a href="/index.html"> <img src="./Logo/main logo.svg" alt=""></a>
+            </div>
+
+            <div class="header_list">
+                <ul>
+                    <li class="header_list_item">
+                        <a href="about.html">關於梅屋<br>ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="product.html">商品一覽<br>PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="bar.html">品梅吧<br>UME BAR</a>
+                    </li>
+                    <li>
+                        <a href="store.html">找到梅<br>OUR STORE</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">聯絡我們<br>CONTACT US</a>
+                    </li>
+
+                    <div class="header_icon">
+                        <li>
+                            <a href="signin.html"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="listHead">
+        <h3>詢問清單</h3>
+    </div>
+
+    <div class="listContent">
+        <ul>
+            <li class="listTitle">
+                <p>商品名稱</p>
+                <p>數量</p>
+            </li>
+            <li class="listItem">
+                <img class="listProduct" src="./Product/商品圖/product-6.png" alt="">
+                <p>燒酌梅酒<br>600ml</p>
+                <input class="listNum" type="number" name="updates[]" value="1" min="0"> 
+                <img class="trash" src="./list/ゴミ箱のアイコン素材.png" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="listForm">
+        <input type="text" placeholder="請填寫聯絡人姓名">
+        <input type="text" placeholder="請填寫聯絡電話">
+        <input type="text" placeholder="請填寫聯絡Email">
+        <input type="text" placeholder="請填寫詢問單備註">
+    </div>
+
+    <div class="checkAge">
+        <label class="agreeAge" for="">
+            <input type="checkbox" name="iagree" value="1" id="agree">
+            <span>我已年滿18歲</span>
+        </label>
+    </div>
+
+    <div class="claim">
+        <p>
+            本網站並非線上交易型網站，所列商品及其相關資訊均僅供介紹參考之用，公司客服人員會儘速與您連絡。 所有交易細節請均以我們服務人員與您確認訂單當時的內容與說明為準，如有造成不便及困擾之處，敬請見諒。
+        </p>
+    </div>
+
+    <div class="listBtn">
+        <div>
+            <button class="sendBtn" type="button">送出詢問單</button>
+        </div>
+       <div>
+        <button class="keepBtn" type="button">繼續瀏覽</button>
+       </div>
+    </div>
+    
+
+    <!-- 酒後不開車聲明 -->
+    <div class="warning">
+        <img src="./index/warning1200.svg" alt="">
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <ul class="footer_inner">
+            <p>© Umeya. All rights reserved.</p>
+            <div class="footer_icon">
+                <li><a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/" target="window name2">
+                        <i class="fab fa-instagram"></i></a></li>
+            </div>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

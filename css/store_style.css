@@ -1,0 +1,283 @@
+@import url(./reset.css);
+
+*{
+    box-sizing: border-box; 
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Noto Serif TC', 'Noto Serif', serif;
+    font-size: 16px;
+    color: #1C1C1C;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}
+
+a{
+    color: #1C1C1C;;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px;
+    color: #A6C609;
+}
+
+/* ------------------ nav bar -------------------*/
+#header{
+    background-color: whitesmoke;
+    max-width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .header_logo img{
+    display: block;
+    width: 70px;
+}
+
+#header .header_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .header_list ul{
+    display: flex;
+    width: 1100px;
+    justify-content: flex-end;
+}
+
+#header .header_list a{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.header_icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.header_icon i{
+    display: block;
+    font-size: 30px;
+}
+
+.header_list li a{
+    border-bottom:3px solid transparent;
+}
+
+.header_list li:hover a{
+    border-bottom: 3px solid #BF5B04;
+}
+
+/* ------------------ top_banner -------------------*/
+.top_banner{
+    width: 100%;
+    position: relative;
+}
+
+.top_banner img{
+    width: 100%;
+}
+
+.top_banner h2{
+    color: whitesmoke;
+    text-align: center;
+    position:  absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* ------------------ intro -------------------*/
+.intro h3{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+/* ------------------ storeitem -------------------*/
+.storeItem{
+    margin-bottom: 20px;
+}
+
+.storeItem ul{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    
+    position: relative;
+}
+
+.storeItem li{
+    width: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.s1{
+    background-image: url(../Store/資產\ 1-100.jpg);
+    flex-grow: 1;
+}
+
+.s2{
+    background-image: url(../Store/資產\ 9-100.jpg);
+    flex-grow: 1;
+}
+
+.s3{
+    background-image: url(../Store/資產\ 16-100.jpg);
+    flex-grow: 1;
+}
+
+.s4{
+    background-image: url(../Store/資產\ 2-100.jpg);
+    flex-grow: 1;
+}
+
+.s5{
+    background-image: url(../Store/資產\ 7-100.jpg);
+    flex-grow: 1;
+}
+
+.s6{
+    background-image: url(../Store/資產\ 10-100.jpg);
+    flex-grow: 1;
+}
+
+.s7{
+    background-image: url(../Store/1x/資產\ 17-100.jpg);
+    flex-grow: 1;
+}
+
+.s8{
+    background-image: url(../Store/1x/資產\ 28-100.jpg);
+    flex-grow: 1;
+}
+
+.s9{
+    background-image: url(../Store/1x/資產\ 32-100.jpg);
+    flex-grow: 1;
+}
+
+.s1 p, .s7 p{
+    position: absolute;
+    top: 80px;
+    left: 260px;
+    text-align: center;
+}
+
+.s2 p, .s8 p{
+    position: absolute;
+    top: 80px;
+    left: 645px;
+    text-align: center;
+}
+
+.s4 p{
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    text-align: center;
+}
+
+.s5 p{
+    position: absolute;
+    top: 80px;
+    left: 455px;
+    text-align: center;
+}
+
+.s6 p{
+    position: absolute;
+    top: 80px;
+    right: 240px;
+    text-align: center;
+}
+
+.s9 p{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    text-align: center;
+}
+
+li:hover {
+    opacity: 0.8;
+}
+
+li:hover p{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* --------------- 地址 & google map ----------------*/
+.storeadd h3{
+    text-align: center;
+}
+
+.storeadd p{
+    text-align: center;
+}
+
+.storeadd iframe{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --------------- 喝酒不開車 ----------------*/
+.warning{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 60px;
+}
+
+/* ---------------- footer -----------------*/
+.footer_inner{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.footer_inner p{
+    line-height: 30px;
+}
+
+.footer_icon{
+    display: flex;
+}
+
+.footer_inner .footer_icon li a{
+    font-size: 25px;
+    margin-left: 10px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅屋 UMEYA</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 導覽列 -->
+        <nav id="header">
+            <div class="header_logo">
+                <a href="/index.html"> <img src="./Logo/main logo.svg" alt=""></a>
+            </div>
+
+            <div class="header_list">
+                <ul>
+                    <li class="header_list_item">
+                        <a href="about.html">關於梅屋<br>ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="product.html">商品一覽<br>PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="bar.html">品梅吧<br>UME BAR</a>
+                    </li>
+                    <li>
+                        <a href="store.html">找到梅<br>OUR STORE</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">聯絡我們<br>CONTACT US</a>
+                    </li>
+
+                    <div class="header_icon">
+                        <li>
+                            <a href="signin.html"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 會員註冊表單 -->
+    <section class="signIn">
+        <div class="signInHead">
+            <h3>會員註冊</h3>
+        </div>
+
+        <div class="signContent">
+            <form action="#" method="post" class="signinacc" accept-charset="utf-8">
+                <div class="form">
+                    <ul class="formInner">
+                        <li>姓名*</li>
+                        <div class="formName">
+                            <li><input type="text" value name="customer[first_name]" size="30" placeholder="姓"></li>
+                            <li><input type="text" name="customer[last_name]" size="30" placeholder="名"></li>
+                        </div>
+                        <li>電子郵件地址*<br>
+                            ※電子郵件地址將作為登入帳號，敬請填寫正確資訊，以免喪失會員權益。</li>
+                        <li><input type="email" value name="customer[email]" size="50" placeholder="example@gmail.com">
+                        </li>
+                        <li>生日*</li>
+                        <li><input type="text" name="customer[birthday]" placeholder="請輸入您的生日"></li>
+                        <li></li>
+                        <li>密碼*</li>
+                        <li><input type="text" name="customer[password]" placeholder="請輸入您的密碼"></li>
+                        <li>再次確認密碼*</li>
+                        <li><input type="text" name="customer[password]" placeholder="請再次輸入您的密碼"></li>
+                    </ul>
+                    <div class="agreebox">
+                        <label class="agreeInner" for="">
+                            <input type="checkbox" name="iagree" value="1" id="agree">
+                            <span>
+                                我已閱讀並同意
+                                <a href="#"><u>「使用條款」、「免責聲明」</u></a>
+                                等所載內容及其意義，茲同意該等條款規定，並願遵守網站現今、嗣後規範的各種規則</u></a>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="submitBtn">
+                        <button type="submit">註冊</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 酒後不開車聲明 -->
+        <div class="warning">
+            <img src="./index/warning1200.svg" alt="">
+        </div>
+
+        <!-- footer -->
+        <footer id="footer">
+            <ul class="footer_inner">
+                <p>© Umeya. All rights reserved.</p>
+                <div class="footer_icon">
+                    <li><a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="window name2">
+                            <i class="fab fa-instagram"></i></a></li>
+                </div>
+            </ul>
+        </footer>
+    </section>
+
+</body>
+
+</html>

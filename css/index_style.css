@@ -1,0 +1,333 @@
+@import url(./reset.css);
+
+*{
+    box-sizing: border-box; 
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Noto Serif TC', 'Noto Serif', serif;
+    font-size: 16px;
+    color: #1C1C1C;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}
+
+a{
+    color: #1C1C1C;;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px;
+    color: #A6C609;
+    letter-spacing: 5px;
+}
+
+
+/* ------------------ nav bar -------------------*/
+#header{
+    background-color: whitesmoke;
+    max-width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .header_logo img{
+    display: block;
+    width: 70px;
+}
+
+#header .header_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .header_list ul{
+    display: flex;
+    width: 1100px;
+    justify-content: flex-end;
+}
+
+#header .header_list a{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.header_icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.header_icon i{
+    display: block;
+    font-size: 30px;
+}
+
+.header_list li a{
+    border-bottom:3px solid transparent;
+}
+
+.header_list li:hover a{
+    border-bottom: 3px solid #BF5B04;
+}
+
+/* ------------------ top banner -------------------*/
+.top_banner{
+    position: relative;
+}
+
+.top_banner img{
+    display: block;
+    width: 100%;
+    height: 650px;
+    opacity: 0.9;
+}
+
+.top_banner .center_logo{
+    display: block;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* --------------- About Us ----------------*/
+.index_about{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 20px 0 20px 0;
+}
+
+.index_about img{
+    display: block;
+    max-width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.index_about .index_about_text{
+    align-items: baseline;
+    width: 600px;
+    margin-left: 60px;
+}
+
+.index_about .index_about_text h3{
+    margin-top: 60px;
+}
+
+.index_about .index_about_text p{
+    margin-left: 20px;
+}
+
+.index_about_text a{
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color:#1C1C1C;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.index_about_text a:hover{
+    background-color:#BF5B04;
+}
+
+/* --------------- Products ----------------*/
+.index_product_title h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.index_product_list{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+}
+
+.index_product_list li{
+    position: relative;
+}
+
+.index_product_list li img{
+    border: 0;
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.index_product_list li a{
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color:#1C1C1C;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.index_product_list a:hover{
+    background-color:#BF5B04;
+}
+
+/* --------------- UME BAR ----------------*/
+.index_bar{
+    background-size: cover;
+    background-image: url(../index/index_bar_pic1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 65px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 60px;
+    align-items: center;
+}
+
+.index_bar_text {
+    background-color: whitesmoke;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin-left: 50px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px;
+}
+
+.index_bar_text p{
+    margin-left: 20px;
+}
+
+.index_bar_text a{
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color:#1C1C1C;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.index_bar_text a:hover{
+    background-color:#D98E04;
+}
+
+/* --------------- STORE ----------------*/
+.index_store{
+    background-size: cover;
+    background-image: url(../index/index_store_pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 65px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 60px;
+    position: relative;
+    text-align: center;
+}
+
+.index_store_text{
+    background-color: whitesmoke;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 0 20px 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    left: 700px;
+    top: 10px;
+}
+
+.index_store_text p{
+    margin-left: 20px;
+}
+
+.index_store_text a{
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color:#1C1C1C;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-self: center;
+}   
+
+.index_store_text a:hover{
+        background-color:#D98E04;
+}
+
+/* --------------- 喝酒不開車 ----------------*/
+.warning{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 60px;
+}
+
+/* ---------------- footer -----------------*/
+.footer_inner{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.footer_inner p{
+    line-height: 30px;
+}
+
+.footer_icon{
+    display: flex;
+}
+
+.footer_inner .footer_icon li a{
+    font-size: 25px;
+    margin-left: 10px;
+}
