@@ -361,7 +361,7 @@ h3{
 /* ---------------- fo to top btn -----------------*/
 #topBtn {
     position: fixed; 
-    bottom: 20px; 
+    bottom: 5px; 
     right: 30px; 
     z-index: 99; 
     border: none; 
