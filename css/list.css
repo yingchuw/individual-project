@@ -214,3 +214,21 @@ h3{
     font-size: 25px;
     margin-left: 10px;
 }
+
+/* ---------------- fo to top btn -----------------*/
+#topBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #1c1c1c; 
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  #topBtn:hover {
+    background-color: #D98E04;
+  }
