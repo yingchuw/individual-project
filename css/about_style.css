@@ -133,6 +133,10 @@ h3{
     margin-left: 200px;
 }
 
+.intro_top_text{
+    margin-top: 40px;
+}
+
 .intro_top .intro_top_text p{
     width: 400px;
     border: 2px solid #A6C609;
