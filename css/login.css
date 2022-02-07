@@ -118,3 +118,37 @@ h3{
     width: 50px;
     height: 30px;
 }
+
+.forgetPasswd{
+    margin-bottom: 20px;
+}
+
+/* --------------- 喝酒不開車 ----------------*/
+.warning{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 60px;
+}
+
+/* ---------------- footer -----------------*/
+.footer_inner{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.footer_inner p{
+    line-height: 30px;
+}
+
+.footer_icon{
+    display: flex;
+}
+
+.footer_inner .footer_icon li a{
+    font-size: 25px;
+    margin-left: 10px;
+}
