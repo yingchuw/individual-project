@@ -1,22 +1,23 @@
 /* ------------------ top banner -------------------*/
 .top_banner{
-    position: relative;
-}
-
-.top_banner img{
-    display: block;
+    background-image: url(../index/index_banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
     width: 100%;
     height: calc(100vh - 140px);
+
+    position: relative;
 }
 
 .top_banner .center_logo{
     width: 300px;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     animation: fadeInAnimation linear 3s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
