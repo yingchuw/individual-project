@@ -28,13 +28,12 @@
 
 /* ------------------ storeitem -------------------*/
 .storeItem{
-    margin-bottom: 20px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .storeItem ul{
-    width: 1200px;
     height: 200px;
-    margin: 0 auto;
     display: flex;
     
     position: relative;
@@ -133,6 +132,14 @@
     text-align: center;
 }
 
+.s9 i{
+    position: absolute;
+    bottom: 30px;
+    right: 95px;
+    text-align: center;
+    cursor: pointer; 
+}
+
 li:hover {
     opacity: 0.8;
 }
@@ -145,6 +152,7 @@ li:hover p{
 /* --------------- 地址 & google map ----------------*/
 .storeadd h3{
     text-align: center;
+    margin-top: 50px;
 }
 
 .storeadd p{

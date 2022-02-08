@@ -75,29 +75,59 @@
 .c1{
     background-image: url(../Bar/cocktail/c1.jpg);
     flex-grow: 2;
+    position: relative;
 }
 
 .c2{
     background-image: url(../Bar/cocktail/c2.jpg);
     flex-grow: 2;
+    position: relative;
 }
 
 .c3{
     background-image: url(../Bar/cocktail/c3.jpg);
     flex-grow: 3;
+    position: relative;
 }
 
 .c4{
     background-image: url(../Bar/cocktail/c4.jpg);
     flex-grow: 4;
+    position: relative;
 }
 
 .c5{background-image: url(../Bar/cocktail/c5.jpg);
     flex-grow: 5;
+    position: relative;
 }
 
 .cocktaillist li:hover{
     flex-grow: 6;
+}
+
+.cocktaillist p{
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25px;
+    width: 150px; 
+    height: 150px;
+    background-color: whitesmoke;
+    opacity: .8;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    transform:scaleY(0);
+    transition:transform .5s;
+}
+
+.cocktaillist li:hover p{
+    display: block; 
+    transform:scaleY(1);
 }
 
 /* --------------- 地址 & google map ----------------*/
