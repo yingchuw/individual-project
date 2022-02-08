@@ -194,6 +194,7 @@
 /* ------------------ 推薦喝法 -------------------*/
 .recommand{
     text-align: center;
+    margin-top: 30px;
 }
 
 .recommandInner{
