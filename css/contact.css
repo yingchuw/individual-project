@@ -54,24 +54,19 @@
 /* --------------- agree box ----------------*/
 
 .agreebox{
-    width: 800px;
-    margin-left: 370px;
+    width: 100%;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .agreebox .agreeInner{
-    margin-left: 10px;
+    text-align: center;
 }
 
 .agreeSend{
-    width: 800px;
+    width: 100%;
     margin: 20px;
     margin: 0 auto;
-}
-
-.checkBoxIcon span a{
-    text-decoration: underline;
 }
 
 .agreeSend .sendBtn{
