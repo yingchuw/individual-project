@@ -6,6 +6,7 @@
 
 .top_banner img{
     width: 100%;
+    height: calc(100vh - 140px);
 }
 
 .top_banner h2{
