@@ -27,13 +27,13 @@
 
 .intro_top{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 30px;
 }
 
 .intro_top .intro_top_pic img{
     width: 300px;
-    margin-left: 200px;
+    margin-right: 50px;
 }
 
 .intro_top_text{
@@ -41,12 +41,11 @@
 }
 
 .intro_top .intro_top_text p{
-    width: 400px;
+    width: 450px;
     border: 2px solid #A6C609;
     border-radius: 3px;
     text-align: left;
     padding: 30px;
-    margin-right: 200px;
 }
 
 /* ------------------ intro middle -------------------*/
@@ -54,7 +53,7 @@
     margin: 20px;
     padding: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 
@@ -76,7 +75,7 @@
     width: 50%;
     border-left: 2px dashed#A6C609;
     padding-left: 30px;
-    margin-right: 205px;
+    margin-right: 200px;
 }
 
 /* ------------------ intro bottom-------------------*/
@@ -92,13 +91,12 @@
     border-radius: 3px;
     text-align: left;
     padding: 30px;
-    margin-left: 200px;
+    margin-right: 50px;
     margin-top: 30px;
 }
 
 .intro_bottom .intro_bottom_pic img{
-    width: 60%;
-    margin-left: 85px;
+    width: 400px;
 }
 
 /* --------------- intro end ----------------*/
