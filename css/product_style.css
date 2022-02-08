@@ -47,6 +47,14 @@
     line-height: 1.5;
 }
 
+.productList ul li:hover p{
+    color: #BF5B04;
+}
+
+.productTitle{
+    margin-top: 20px;
+}
+
 .productList ul li a{
     display: block;
     text-decoration: none;
@@ -79,7 +87,7 @@
 
 .mainProduct .item{
     overflow: hidden;
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -90,9 +98,9 @@
     margin-top: 30px;
 }
 
-.item .itemInnerPic img{
+/* .item .itemInnerPic img{
     width: 65%;
-}
+} */
 
 .item .itemInnerText{
     float: right;
@@ -120,36 +128,32 @@
 
 .itemInnerTextWarning{
     color: #fd171a;
-    padding: 5px;
+    margin-top: 16px;
     font-weight: bold;
 }
 
-.itemInnerPic .sakeume {
-    height: 30%;
+.itemInnerPic > .ume{
+    height: 300px;
+    margin-left: 220px;
+    margin-top: 50px;
 }
 
-.item .itemInnerPic > .sakeume{
-    height: 340px;
-    width: 95px;
-    margin-right: 100px;
+.itemInnerPic > .sakeume{
+    height: 400px;
 }
 
-.item .itemInnerPic > .whiskyume{
-    height: 340px;
-    width: 95px;
-    margin-right: 100px;
+.itemInnerPic > .whiskyume{
+    height: 400px;
 }
 
-.item .itemInnerPic > .shoume{
-    height: 220px;
-    width: 95px;
-    margin-right: 100px;
+.itemInnerPic > .shoume{
+    height: 300px;
+    margin-top: 50px;
 }
 
-.item .itemInnerPic > .awamoriume{
-    height: 210px;
-    width: 100px;
-    margin-right: 100px;
+.itemInnerPic > .awamoriume{
+    height: 300px;
+    margin-top: 50px;
 }
 
 .addToList{
@@ -163,6 +167,7 @@
     color: whitesmoke;
     text-align: center;
     line-height: 40px;
+    margin-top: 20px;
 }
 
 .addToList a:hover{
