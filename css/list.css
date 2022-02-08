@@ -32,8 +32,9 @@
     height: 150px;
 }
 
-.listContent .trash{
-    height: 30px;
+.listContent .fa-trash-alt{
+    font-size: 20px;
+    margin-left: 30px;
 }
 
 .listItem p{
