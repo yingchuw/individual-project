@@ -50,11 +50,11 @@
 
 /* ------------------ intro middle -------------------*/
 .intro_mid{
+    width: 100%;
     margin: 20px;
     padding: 30px;
     display: flex;
-    justify-content: center;
-
+    justify-content: space-between;
 }
 
 .intro_mid .intro_mid_pic2 img{
