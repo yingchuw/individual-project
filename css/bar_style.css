@@ -1,11 +1,30 @@
 /* ------------------ top_banner -------------------*/
 .top_banner{
-    width: 100%;
-}
-
-.top_banner img{
+    background-image: url(../Bar/umebar_banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
     width: 100%;
     height: calc(100vh - 140px);
+
+    position: relative;
+}
+
+.barThe{
+    width: 100px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.barLogo{
+    width: 600px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ------------------ intro -------------------*/

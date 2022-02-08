@@ -1,20 +1,35 @@
 /* ------------------ top_banner -------------------*/
 .top_banner{
+    background-image: url(../About/about_banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
     width: 100%;
+    height: calc(100vh - 140px);
+
+    position: relative;
+    /* width: 100%; */
 }
 
-.top_banner img{
+/* .top_banner img{
     position: relative;
     width: 100%;
     height: calc(100vh - 140px);
-}
+} */
 
 .top_banner h2{
     color: whitesmoke;
     text-align: center;
+
     position:  absolute;
-    top: 300px;
-    right: 400px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* top: 300px;
+    right: 400px; */
 }
 
 /* ------------------ intro -------------------*/
