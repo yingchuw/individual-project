@@ -90,6 +90,7 @@ h3{
 
 .header_list li a{
     border-bottom:3px solid transparent;
+    padding-bottom: 5px;
 }
 
 .header_list li:hover a{
