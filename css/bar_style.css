@@ -45,7 +45,9 @@
 }
 
 .bartenderpic img{
-    width: 80%;
+    height: 350px;
+    border-radius: 15px;
+    margin-right: 20px;
 }
 
 .bartenderpic p{
