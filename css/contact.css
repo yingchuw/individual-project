@@ -48,8 +48,12 @@
     width: 700px;
 }
 
-.formInput .inputComment {
-    height: 200px;
+.formItem textarea{
+    border: 1px solid #1C1C1C;
+    border-radius: 3px;
+    resize:none; 
+    width:700px; 
+    height:200px;
 }
 
 /* --------------- agree box ----------------*/
