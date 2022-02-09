@@ -135,18 +135,20 @@ h3{
 
 /* ---------------- go to top btn -----------------*/
 #topBtn {
+    background-color: transparent;
     position: fixed; 
     bottom: 5px; 
     right: 30px; 
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: #1c1c1c; 
-    color: whitesmoke;
-    padding: 15px;
-    border-radius: 5px;
   }
   
+  #topBtn i{
+      background-color: transparent;
+      font-size: 40px;
+  }
+
   #topBtn:hover {
-    background-color: #D98E04;
+    color: #D98E04;
   }
