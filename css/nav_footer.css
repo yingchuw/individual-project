@@ -5,8 +5,9 @@
 }
 
 #wrapper{
-    width: 100%;
+    max-width: 1200x;
     margin: 0 auto;
+    height: auto;
 }
 
 body{
@@ -95,6 +96,11 @@ h3{
 
 .header_list li:hover a{
     border-bottom: 3px solid #BF5B04;
+}
+
+.fa-bars:before{
+    font-size: 30px;
+    display: none;
 }
 
 /* --------------- 喝酒不開車 ----------------*/
