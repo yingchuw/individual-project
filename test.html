@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>梅屋 UMEYA</title>
-    <link rel="stylesheet" href="./css/newNavandFooter.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <!-- <link rel="stylesheet" href="./css/nav_footer.css"> -->
+    <link rel="stylesheet" href="./css/test.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,12 +20,15 @@
 </head>
 
 <body>
-    <div id="wrap">
-        <!-- 導覽列 -->
+    <div class="wrap">
         <nav class="header">
             <div class="logo">
                 <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
+            <a href="#" class="showmenu">
+                <i class="fa fa-bars"></i>
+            </a>
+            
             <ul class="menu">
                 <li class="menu_list">
                     <a href="about.html">關於梅屋<br>ABOUT US</a>
@@ -43,50 +46,30 @@
                     <a href="contact.html">聯絡我們<br>CONTACT US</a>
                 </li>
             </ul>
-            <a href="#" class="showmenu">
-                <i class="fa fa-bars"></i>
-            </a>
+            
             <div class="header_icon">
                 <a href="login.html"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
+
+        <!-- Top Banner -->
+        <div class="top_banner">
+            <!-- <img src="./index/index_banner.jpg" alt=""> -->
+            <img class="center_logo" src="./Logo/logo_white.svg" alt="">
+        </div>
+
     </div>
 
-    <!-- 會員登入表單 -->
-    <section class="login">
-        <div class="loginHead">
-            <h3>會員登入 / 註冊</h3>
-        </div>
-        <div class="loginMain">
-            <input type="text" placeholder="請輸入註冊Email" size="50">
-            <input type="text" placeholder="請輸入密碼" size="30">
-            <button type="submit">登入</button>
-            <a href="signin.html"><button type="submit">註冊</button></a>
-        </div>
-        <hr class="divider">
-        <div class="forgetPasswd">
-            <h3>忘記密碼</h3>
-            <input type="text" placeholder="請輸入註冊Email" size="50">
-            <button type="submit">送出</button>
-        </div>
-    </section>
-
-    <!-- 酒後不開車聲明 -->
-    <div class="warning"></div>
-
-    <!-- footer -->
-    <footer id="footer">
-        <ul class="footer_inner">
-            <p>© Umeya. All rights reserved. 本網站為緯育TibaMe前端設計工程師班TFD105期學員專題作品，僅供學習、展示之用。</p>
-            <div class="footer_icon">
-                <li><a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li><a href="https://www.instagram.com/" target="window name2">
-                        <i class="fab fa-instagram"></i></a></li>
-            </div>
-        </ul>
-    </footer>
+    <!-- <script>
+        $(document).ready(function () {
+            // 透過 on 隨時監聽
+            $('.showmenu').on('click', function (e) {
+                e.preventDefault();
+                $('body').toggleClass('menu-show');
+            })
+        })
+    </script> -->
 
 </body>
 

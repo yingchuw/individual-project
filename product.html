@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>梅屋 UMEYA</title>
-        <link rel="stylesheet" href="./css/nav_footer.css">
-        <link rel="stylesheet" href="./css/product_style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-            integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅屋 UMEYA</title>
+    <link rel="stylesheet" href="./css/newNavandFooter.css">
+    <link rel="stylesheet" href="./css/product_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+</head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrap">
         <!-- 導覽列 -->
-        <nav id="header">
-            <div class="header_logo">
-                <a href="index.html"> <img src="./Logo/main logo.svg" alt=""></a>
+        <nav class="header">
+            <div class="logo">
+                <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
-
-            <div class="header_list">
-                <ul>
-                    <li class="header_list_item">
-                        <a href="about.html">關於梅屋<br>ABOUT US</a>
-                    </li>
-                    <li>
-                        <a href="product.html">商品一覽<br>PRODUCTS</a>
-                    </li>
-                    <li>
-                        <a href="bar.html">品梅吧<br>UME BAR</a>
-                    </li>
-                    <li>
-                        <a href="store.html">梅屋商店<br>OUR STORE</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">聯絡我們<br>CONTACT US</a>
-                    </li>
-
-                    <div class="header_icon">
-                        <li>
-                            <a href="login.html"><i class="fas fa-user"></i></a>
-                        </li>
-                        <li>
-                            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-                        </li>
-                    </div>
-                </ul>
+            <ul class="menu">
+                <li class="menu_list">
+                    <a href="about.html">關於梅屋<br>ABOUT US</a>
+                </li>
+                <li>
+                    <a href="product.html">商品一覽<br>PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="bar.html">品梅吧<br>UME BAR</a>
+                </li>
+                <li>
+                    <a href="store.html">梅屋商店<br>OUR STORE</a>
+                </li>
+                <li>
+                    <a href="contact.html">聯絡我們<br>CONTACT US</a>
+                </li>
+            </ul>
+            <a href="#" class="showmenu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="header_icon">
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
 
@@ -414,7 +409,6 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
     </script>
 </body>
 

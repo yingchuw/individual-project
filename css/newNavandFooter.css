@@ -8,18 +8,18 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Noto Serif TC', 'Noto Serif', serif;
     font-size: 16px;
     color: #1C1C1C;
     line-height: 1.2;
     letter-spacing: 0.1em;
-}
-
-#wrap{
+  }
+  
+#wrap {
     max-width: 100%;
     margin: 0 auto;
-}
+  }
 
 a{
     color: #1C1C1C;;
@@ -40,78 +40,10 @@ h3{
     letter-spacing: 5px;
 }
 
-/* ------------------ old nav bar -------------------*/
-/*
-#header{
-    background-color: whitesmoke;
-    max-width: 100%;
-    border: 1px solid #ebebeb;
-    border-radius: 2px;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#header .header_logo img{
-    display: block;
-    width: 70px;
-}
-
-#header .header_list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#header .header_list ul{
-    display: flex;
-    width: 1100px;
-    justify-content: flex-end;
-}
-
-#header .header_list a{
-    display: flex;
-    text-align: center;
-    font-weight: bold;
-    margin-left: 40px;
-}
-
-.header_icon{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;  
-}
-
-.header_icon i{
-    display: block;
-    font-size: 30px;
-}
-
-.header_list li a{
-    border-bottom:3px solid transparent;
-    padding-bottom: 5px;
-}
-
-.header_list li:hover a{
-    border-bottom: 3px solid #BF5B04;
-}
-
-.fa-bars:before{
-    font-size: 30px;
-    /* display: none; */
-}
-*/
-/* ------------------ NEW nav bar -------------------*/
-
+/* ------------------ nav bar -------------------*/
 .header {
     height: 80px;
-    border-bottom: 2px solid #A6C609;
+    /* border-bottom: 2px solid #A6C609; */
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -135,6 +67,7 @@ ul.menu{
 .menu li a {
     display: block;
     color: #1C1C1C;
+    font-weight: bold;
     padding: 1em;
     text-decoration: none;
     transition: all .3s;
@@ -168,6 +101,7 @@ ul.menu{
       position: fixed;
       width: 100%;
       background-color: whitesmoke;
+      z-index: 100;
     }
 }
 
@@ -276,7 +210,7 @@ ul.menu{
 #topBtn {
     background-color: transparent;
     position: fixed; 
-    bottom: 80px; 
+    bottom: 50px; 
     right: 40px; 
     z-index: 99; 
     border: none; 
