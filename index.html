@@ -174,13 +174,9 @@
         }
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0; // for safari
+            document.documentElement.scrollTop = 0; // for chrome
         }
-
-        $backToTop.click(function () {
-            $('html, body').anitmation({ scrollTop: 0 }, 200);
-        });
 
     </script>
 </body>
