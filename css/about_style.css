@@ -12,11 +12,6 @@
     /* width: 100%; */
 }
 
-/* .top_banner img{
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 140px);
-} */
 
 .top_banner h2{
     color: whitesmoke;
@@ -28,8 +23,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    /* top: 300px;
-    right: 400px; */
 }
 
 /* ------------------ intro -------------------*/
