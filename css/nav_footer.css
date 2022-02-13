@@ -104,7 +104,7 @@ h3{
 
 .fa-bars:before{
     font-size: 30px;
-    display: none;
+    /* display: none; */
 }
 
 /* --------------- 喝酒不開車 ----------------*/
