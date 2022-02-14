@@ -56,17 +56,15 @@
     margin-left: 120px;
 }
 
-.index_about .index_about_text{
-    align-items: baseline;
-    width: 600px;
-    margin-left: 60px;
+.index_about_text{
+    margin-left: 30px;
 }
 
-.index_about .index_about_text h3{
+.index_about_text h3{
     margin-top: 60px;
 }
 
-.index_about .index_about_text p{
+.index_about_text p{
     margin-left: 20px;
 }
 
@@ -88,13 +86,14 @@
 }
 
 @media screen and (max-width: 991px){
-    div .index_about{
-        display: inline-block;
+    .index_about{
+        display: block;
         width: 100%;
     }
 
-    div .index_about_text{
-        max-width: 100%;
+    .index_about_text{
+        width: 100%;
+        margin: 0 auto;
     }
 
     .index_about img{
@@ -105,7 +104,7 @@
     .index_about_text h3{
         width: 100%;
         text-align: center;
-        margin: 10px auto;
+        margin-top: 20px;
     }
    
     .index_about_text p {
@@ -115,11 +114,9 @@
     }
 
     .index_about_text a{
-        margin-top: 20px auto;
-        justify-content: center;
+        margin: 20px auto;
     }
 }
-
 
 /* --------------- Products ----------------*/
 .index_product_title h3{
@@ -199,9 +196,6 @@
 
 }
 
-@media screen and (max-width: 991px){
-    
-}
 
 /* --------------- UME BAR ----------------*/
 .index_bar{
@@ -214,6 +208,7 @@
     padding: 65px 0 65px 60px;
 
     position: relative;
+    text-align: center;
 }
 
 .index_bar_text {
@@ -244,12 +239,22 @@
     text-align: center;
     line-height: 40px;
     margin-top: 20px;
-    margin-left: 20px;
     border-radius: 5px;
+    align-self: center;
 }
 
 .index_bar_text a:hover{
     background-color:#D98E04;
+}
+
+@media screen and (max-width: 991px){
+    .index_bar{
+        margin: 65px 65px 0 65px;
+    }
+
+    .index_about_text{
+        max-width: 100%;
+    }
 }
 
 /* --------------- STORE ----------------*/
@@ -289,11 +294,20 @@
     text-align: center;
     line-height: 40px;
     margin-top: 20px;
-    margin-left: 20px;
     align-self: center;
     border-radius: 5px;
 }   
 
 .index_store_text a:hover{
         background-color:#D98E04;
+}
+
+@media screen and (max-width: 991px){
+    .index_store{
+        margin: 65px 65px 0 65px;
+    }
+
+    .index_store_text{
+        max-width: 100%;
+    }
 }
