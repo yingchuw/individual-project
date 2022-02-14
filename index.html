@@ -85,12 +85,11 @@
                     <a href="contact.html">聯絡我們<br>CONTACT US</a>
                 </li>
             </ul>
-            <a href="#" class="showmenu">
-                <i class="fa fa-bars"></i>
-            </a>
+
             <div class="header_icon">
                 <a href="login.html"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="showmenu"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
 
@@ -173,12 +172,10 @@
         <!-- footer -->
         <footer id="footer">
             <ul class="footer_inner">
-                <p>© Umeya. All rights reserved. 本網站為緯育TibaMe前端設計工程師班TFD105期學員專題作品，僅供學習、展示之用。</p>
+                <p>本網站為緯育TibaMe前端設計工程師TFD1051班學員專題作品，僅供學習、展示之用。</p>
                 <div class="footer_icon">
-                    <li><a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/" target="window name2">
-                            <i class="fab fa-instagram"></i></a></li>
+                    <a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="window name2"><i class="fab fa-instagram"></i></a>
                 </div>
             </ul>
         </footer>
@@ -191,28 +188,8 @@
         </div>
     </div>
 
-    <script>
-        //Get the button
-        mybutton = document.getElementById("topBtn");
-        window.onscroll = function () {
-            scrollFunction()
-        };
+    <script src="./js.js"></script>
 
-        // When the user scrolls down 100px from the top of the document, show the button
-        function scrollFunction() {
-            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // for safari
-            document.documentElement.scrollTop = 0; // for chrome
-        }
-
-    </script>
 </body>
 
 </html>

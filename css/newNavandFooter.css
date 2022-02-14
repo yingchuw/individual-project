@@ -43,16 +43,15 @@ h3{
 /* ------------------ nav bar -------------------*/
 .header {
     height: 80px;
-    /* border-bottom: 2px solid #A6C609; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
   }
   
 .logo {
     display: block;
     width: 70px;
-    margin: 5px 0 10px 100px;
+    margin: 5px 100px 0 0;
 }
 
 ul.menu{
@@ -82,36 +81,33 @@ ul.menu{
 }
 
 .header_icon{
-    margin-right: 100px;
     align-items: center;
 }
 
 .header_icon i{
     font-size: 30px;
     color: #1C1C1C;
-    padding-right: 20px;
+    padding-left: 30px;
+    line-height: 80px;
 }
       
 .header_icon i:hover{
     color: #BF5B04;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .header {
       position: fixed;
       width: 100%;
       background-color: whitesmoke;
       z-index: 100;
+      justify-content: space-between;
     }
-}
 
-/* @media screen and (max-width: 767px){
     .logo{
-        width: 70px;
+        margin-left: 10px;
     }
-} */
 
-@media screen and (max-width: 767px) {
     .menu{
         max-height: 0px;
         overflow: hidden;
@@ -122,53 +118,26 @@ ul.menu{
         text-align: center;
         transition: max-height .8s;
     }
-}
-      
-@media screen and (max-width: 767px) {
+
     .menu li{
         border: 2px solid #A6C609; 
         display: inline-block;
     }
-}
-      
-@media screen and (max-width: 767px) {
+
     .menu li a{
         transition: all .3s;
     }
-}
 
-@media screen and (max-width: 767px){
-    .menu li a:hover{
+    .menu li a:hover, .showmenu i:hover {
         color: #BF5B04;
     }
-}
-      
-@media screen and (max-width: 767px){
+
     .showmenu{
         display: block;
         color: #1C1C1C;
-        line-height: 80px;
         text-decoration: none;
     }
 }
-
-@media screen and (max-width: 767px){
-    .showmenu i{
-        font-size: 30px;
-    }
-}
-/* 
-@media screen and (max-width: 767px){
-    .menu-show .menu {
-        max-height: 500px;
-      }
-} */
-      
-@media screen and (max-width: 767px){
-    .content {
-        padding-top: 90px;;
-      }
-}     
 
 /* --------------- 喝酒不開車 ----------------*/
 .warning{
@@ -181,10 +150,15 @@ ul.menu{
     height: 60px;
 }
 
+@media screen and (max-width: 991px){
+    .warning{
+        width: 100%;
+    }
+}
+
 /* ---------------- footer -----------------*/
 .footer{
     width: 100%;
-    /* margin-bottom: 60px; */
 }
 
 .footer_inner{
@@ -201,9 +175,25 @@ ul.menu{
     display: flex;
 }
 
-.footer_inner .footer_icon li a{
+.fa-facebook-f:before, .fa-instagram:before{
     font-size: 25px;
-    margin-left: 10px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 991px){
+    .footer_inner{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .footer_inner p{
+     text-align: center;
+    }
+
+    div.footer_icon{
+        margin-top: 10px;
+        justify-content: center;
+    }
 }
 
 /* ---------------- go to top btn -----------------*/
@@ -227,3 +217,4 @@ ul.menu{
   #topBtn:hover {
     color: #D98E04;
   }
+
