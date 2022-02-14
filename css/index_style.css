@@ -88,16 +88,38 @@
 }
 
 @media screen and (max-width: 991px){
-    .index_about{
+    div .index_about{
         display: inline-block;
-        margin: 0 auto;
+        width: 100%;
+    }
+
+    div .index_about_text{
+        max-width: 100%;
     }
 
     .index_about img{
         max-width: 100%;
         margin: 0 auto;
     }
+
+    .index_about_text h3{
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+   
+    .index_about_text p {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .index_about_text a{
+        margin-top: 20px auto;
+        justify-content: center;
+    }
 }
+
 
 /* --------------- Products ----------------*/
 .index_product_title h3{
@@ -125,7 +147,7 @@
     margin-bottom: 30px;
 }
 
-.productbtn{
+.productbtn_1{
     display: block;
     height: 40px;
     width: 150px;
@@ -137,12 +159,48 @@
     border-radius: 5px;
 }
 
+.productbtn_2{
+    display: none;
+}
+
 .index_product_list a:hover{
     background-color:#BF5B04;
 }
 
 .index_product_list img:hover {
     transform:scale(1.1);
+}
+
+@media screen and (max-width: 991px){
+    .index_product_title{
+        width: 100%;
+        margin: auto
+    }
+
+    .index_product_list{
+        display: block;
+    }
+
+    .productbtn_1{
+        display: none;
+    }
+
+    .productbtn_2{
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color:#1C1C1C;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    
 }
 
 /* --------------- UME BAR ----------------*/
