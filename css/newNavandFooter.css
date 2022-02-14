@@ -76,7 +76,7 @@ ul.menu{
     color: #BF5B04;
 }
 
-.showmenu {
+.showmenu, #NavClose{
     display: none;
 }
 

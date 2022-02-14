@@ -32,6 +32,15 @@
     } 
 } 
 
+@media screen and (max-width: 991px){
+    .top_banner .center_logo{
+        width: 200px;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 /* --------------- About Us ----------------*/
 .index_about{
     display: flex;
@@ -76,6 +85,18 @@
 
 .index_about_text a:hover{
     background-color:#BF5B04;
+}
+
+@media screen and (max-width: 991px){
+    .index_about{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .index_about img{
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /* --------------- Products ----------------*/

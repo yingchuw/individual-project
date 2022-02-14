@@ -68,7 +68,7 @@
             <div class="logo">
                 <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
-            <ul class="menu">
+            <ul class="menu" id="NavBody">
                 <li class="menu_list">
                     <a href="about.html">關於梅屋<br>ABOUT US</a>
                 </li>
@@ -87,9 +87,13 @@
             </ul>
 
             <div class="header_icon">
-                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="login.html" ><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="showmenu"><i class="fa fa-bars"></i></a>
+                <a href="#" class="showmenu" id="NavBtn">
+                    <i class="fa fa-bars"></i></a>
+                <a href="#" class="nav_btn nav_close js-none" id="NavClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
             </div>
         </nav>
 
@@ -172,7 +176,7 @@
         <!-- footer -->
         <footer id="footer">
             <ul class="footer_inner">
-                <p>本網站為緯育TibaMe前端設計工程師TFD1051班學員專題作品，僅供學習、展示之用。</p>
+                <p>本網站為緯育TibaMe前端設計工程師TFD105班學員專題作品，僅供學習、展示之用。</p>
                 <div class="footer_icon">
                     <a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/" target="window name2"><i class="fab fa-instagram"></i></a>
@@ -183,12 +187,30 @@
         <!-- go to top btn -->
         <div>
             <button id="topBtn" onclick="topFunction()" title="Go to top">
-                <i class="far fa-arrow-alt-circle-up"></i>
+                <i class="fas fa-chevron-circle-up"></i>
             </button>
         </div>
     </div>
 
-    <script src="./js.js"></script>
+    <script>
+        mybutton = document.getElementById("topBtn"); //Get the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // for safari
+            document.documentElement.scrollTop = 0; // for chrome
+        }
+    </script>
 
 </body>
 
