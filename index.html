@@ -87,7 +87,7 @@
             </ul>
 
             <div class="header_icon">
-                <a href="login.html" ><i class="fas fa-user"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="showmenu" id="NavBtn">
                     <i class="fa fa-bars"></i></a>
@@ -99,7 +99,6 @@
 
         <!-- Top Banner -->
         <div class="top_banner">
-            <!-- <img src="./index/index_banner.jpg" alt=""> -->
             <img class="center_logo" src="./Logo/logo_white.svg" alt="">
         </div>
 
@@ -194,6 +193,7 @@
     </div>
 
     <script>
+        // go back to top btn
         mybutton = document.getElementById("topBtn"); //Get the button
         window.onscroll = function () {
             scrollFunction()
@@ -211,6 +211,15 @@
             document.body.scrollTop = 0; // for safari
             document.documentElement.scrollTop = 0; // for chrome
         }
+
+        // hamberger btn
+        const hamburger = document.querySelector(".ham");
+        const navsub = document.querySelector(".menu");
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle("change")
+            navsub.classList.toggle("nav-change")
+        });
+
     </script>
 
 </body>

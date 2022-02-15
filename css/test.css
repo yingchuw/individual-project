@@ -1,0 +1,136 @@
+@import url(./reset.css);
+
+*{
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Serif TC', 'Noto Serif', serif;
+    font-size: 16px;
+    color: #1C1C1C;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+  }
+
+#wrap {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+a{
+    color: #1C1C1C;;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    color: #A6C609;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 991px){
+    *{  
+    overflow:hidden;  
+    }
+}
+
+/*  */
+*{  
+    margin:0;
+    box-sizing: border-box;  
+   }  
+ 
+   /*Properties for Nav-bar*/  
+.navbar{  
+    display:flex;  
+    top:0;  
+    height:80px;  
+    justify-content:center;  
+    align-items:center;   
+    padding:0px 20px;   
+   }  
+
+.nav-sub{  
+    display:flex;  
+    justify-content:space-around; 
+    text-align: center;
+   }  
+
+.list-item {  
+    padding: 30px;   
+   }  
+ 
+.nav_icon{
+    display: flex;
+    align-items: center;
+}
+   /*Properties for Hamburger*/  
+   .ham{  
+    display:none;  
+    padding:5px;  
+    cursor:pointer;  
+   } 
+
+   .bar1,.bar2,.bar3{  
+    display:block;  
+    width:35px;  
+    height:3px;  
+    margin:5px auto;  
+    background-color: #1c1c1c;;  
+    transition: .3s;  
+   } 
+
+   @media only screen and (max-width:991px){  
+   *{  
+     overflow:hidden;  
+    }  
+    
+   .nav-sub{  
+     position:absolute;   
+     top:10vh;  
+     right:0px;  
+     flex-direction:column;  
+     background-color:rgb(0,0,0,0.75);  
+     border-radius:0px 0px 0px 20px;  
+     transition:transform 0.3s ease-in;  
+     transform:translate(100%);  
+     width:100%;
+    }  
+
+   .nav-change{  
+     transform:translate(0%);  
+    }  
+
+   .ham{  
+     display:block;  
+    }
+
+   .change .bar1 {  
+    transform: rotate(45deg) translate(8px,3px);  
+   }
+     
+   .change .bar2 {  
+    opacity: 0;  
+   }  
+
+   .change .bar3 {  
+    transform: rotate(-45deg) translate(8px,-3px);  
+   }
+
+   }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>梅屋 UMEYA</title>
-    <!-- <link rel="stylesheet" href="./css/nav_footer.css"> -->
+    <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/newNavandFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,13 @@
 
 <body>
     <div class="wrap">
-        <nav class="header">
+        <!-- <nav class="header">
             <div class="logo">
                 <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
-            <ul class="menu">
+            <ul class="menu" id="myTopnav">
                 <li class="menu_list">
-                    <a href="about.html">關於梅屋<br>ABOUT US</a>
+                    <a href="about.html" class="active">關於梅屋<br>ABOUT US</a>
                 </li>
                 <li>
                     <a href="product.html">商品一覽<br>PRODUCTS</a>
@@ -46,27 +46,45 @@
             <div class="header_icon">
                 <a href="login.html"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="showmenu"><i class="fa fa-bars"></i></a>
+                <a href="#" class="showmenu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </div>
+        </nav> -->
+
+        <nav class="navbar">
+            <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
+            
+            <ul class="nav-sub">
+                <li class="list-item"><a href="about.html" class="active">關於梅屋<br>ABOUT US</a></li>
+                <li class="list-item"><a href="product.html">商品一覽<br>PRODUCTS</a></li>
+                <li class="list-item"><a href="bar.html">品梅吧<br>UME BAR</a></li>
+                <li class="list-item"><a href="bar.html">品梅吧<br>UME BAR</a></li>
+                <li class="list-item"><a href="bar.html">品梅吧<br>UME BAR</a></li>
+            </ul>
+
+            <ul class="nav_icon">
+                <li class="list-item"><a href="login.html"><i class="fas fa-user"></i></a></li>
+                <li class="list-item"><a href="list.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+
+            <div class="ham">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            
         </nav>
-
-        <!-- Top Banner -->
-        <div class="top_banner">
-            <!-- <img src="./index/index_banner.jpg" alt=""> -->
-            <img class="center_logo" src="./Logo/logo_white.svg" alt="">
-        </div>
-
     </div>
 
-    <!-- <script>
-        $(document).ready(function () {
-            // 透過 on 隨時監聽
-            $('.showmenu').on('click', function (e) {
-                e.preventDefault();
-                $('body').toggleClass('menu-show');
-            })
-        })
-    </script> -->
+    <script>
+
+        const hamburger = document.querySelector(".ham");
+        const navsub = document.querySelector(".nav-sub");
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle("change")
+            navsub.classList.toggle("nav-change")
+        });
+
+    </script>
 
 </body>
 

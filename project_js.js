@@ -1,25 +1,5 @@
 "use strict";
 
-// go back to top btn
-
-// mybutton = document.getElementById("topBtn"); //Get the button
-// window.onscroll = function () {
-//     scrollFunction()
-// };
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-//         mybutton.style.display = "block";
-//     } else {
-//         mybutton.style.display = "none";
-//     }
-// }
-
-// function topFunction() {
-//     document.body.scrollTop = 0; // for safari
-//     document.documentElement.scrollTop = 0; // for chrome
-// }
-
 // hamberger btn
 let showmenu = document.getElementById('NavBtn');
 let nav_close = document.getElementById('NavClose');

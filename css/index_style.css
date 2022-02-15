@@ -193,9 +193,7 @@
     margin: 0 auto;
     border-radius: 5px;
     }
-
 }
-
 
 /* --------------- UME BAR ----------------*/
 .index_bar{
@@ -223,7 +221,7 @@
 
     position: absolute;
     left: 50px;
-    top: 50px;
+    top: 60px;
 }
 
 .index_bar_text p{
@@ -249,11 +247,19 @@
 
 @media screen and (max-width: 991px){
     .index_bar{
-        margin: 65px 65px 0 65px;
+        margin: 20px auto;
+        width: 100%;
+        position: relative;
     }
 
-    .index_about_text{
+    .index_bar_text{
         max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50px;
+        bottom: 50px;
+        margin: 0 auto;
     }
 }
 
@@ -304,10 +310,19 @@
 
 @media screen and (max-width: 991px){
     .index_store{
-        margin: 65px 65px 0 65px;
+        margin: 20px auto;
+        width: 100%;
+        position: relative;
     }
 
     .index_store_text{
         max-width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50px;
+        bottom: 50px;
+        margin: 0 auto;
     }
 }
