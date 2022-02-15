@@ -91,7 +91,7 @@
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="showmenu" id="NavBtn">
                     <i class="fa fa-bars"></i></a>
-                <a href="#" class="nav_btn nav_close js-none" id="NavClose">
+                <a href="#" class="nav_close js-none" id="NavClose">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
             </div>
@@ -213,13 +213,24 @@
         }
 
         // hamberger btn
-        const hamburger = document.querySelector(".ham");
-        const navsub = document.querySelector(".menu");
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle("change")
-            navsub.classList.toggle("nav-change")
-        });
+       function myFunction(){
+           
+       }
 
+// 漢堡選單
+let nav_btn = document.getElementById('NavBtn');
+let nav_close = document.getElementById('NavClose');
+let nav_body = document.getElementById('NavBody');
+nav_btn.addEventListener('click', function () {
+    nav_btn.classList.toggle('js-none');
+    nav_close.classList.toggle('js-none');
+    nav_body.classList.add('js-active');
+})
+nav_close.addEventListener('click', function(){
+    nav_btn.classList.toggle('js-none');
+    nav_close.classList.toggle('js-none');
+    nav_body.classList.remove('js-active');
+})
     </script>
 
 </body>

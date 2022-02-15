@@ -20,12 +20,36 @@
     transform: translate(-50%, -50%);
     }
 
+@media screen and (max-width: 991px){
+    .top_banner{
+        width: 100%;
+        top: 80px;
+        display: block;
+    }
+    
+    .top_banner h2{
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+}
+
 /* ------------------ intro -------------------*/
 .intro h3{
     text-align: center;
     margin: 20px 0 20px 0;
 }
 
+@media screen and (max-width: 991px){
+    .intro{
+        display: block;
+        margin-top: 100px;
+    }
+
+    .intro h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
 /* ------------------ storeitem -------------------*/
 .storeItem{
     width: 1200px;
@@ -147,6 +171,19 @@ li:hover {
 li:hover p{
     color: whitesmoke;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    .storeItem{
+        max-width: 1200px;
+
+    }
+}
+
+@media screen and (max-width: 991px){
+    .storeItem{
+    width: 100%;
+    }
 }
 
 /* --------------- 地址 & google map ----------------*/

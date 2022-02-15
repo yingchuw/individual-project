@@ -17,7 +17,7 @@ body {
   }
   
 #wrap {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -40,18 +40,13 @@ h3{
     letter-spacing: 5px;
 }
 
-@media screen and (max-width: 991px){
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-}
 /* ------------------ nav bar -------------------*/
 .header {
-    height: 80px;
+    /* height: 80px; */
     display: flex;
     justify-content: center;
     position: relative;
+    width: 100%;
   }
   
 .logo {
@@ -117,7 +112,10 @@ ul.menu{
     .menu{
         max-height: 0px;
         overflow: hidden;
-        display: inline-block;
+
+        display: flex;
+        flex-direction: column;
+
         position: absolute;
         top: 81px;
         width: 100%;
@@ -127,15 +125,12 @@ ul.menu{
 
     .menu li{
         border: 2px solid #A6C609; 
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
 
     .menu li a{
         transition: all .3s;
-    }
-
-    .menu li a:hover, .showmenu i:hover {
-        color: #BF5B04;
     }
 
     .showmenu{
@@ -143,6 +138,10 @@ ul.menu{
         color: #1C1C1C;
         text-decoration: none;
         margin-right: 20px;
+    }
+
+    .menu li a:hover, .showmenu i:hover {
+        color: #BF5B04;
     }
 }
 
