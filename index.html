@@ -69,19 +69,19 @@
                 <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
             <ul class="menu" id="NavBody">
-                <li class="menu_list">
+                <li class="nav_items">
                     <a href="about.html">關於梅屋<br>ABOUT US</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="product.html">商品一覽<br>PRODUCTS</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="bar.html">品梅吧<br>UME BAR</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="store.html">梅屋商店<br>OUR STORE</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="contact.html">聯絡我們<br>CONTACT US</a>
                 </li>
             </ul>
@@ -89,9 +89,11 @@
             <div class="header_icon">
                 <a href="login.html"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+
                 <a href="#" class="showmenu" id="NavBtn">
                     <i class="fa fa-bars"></i></a>
-                <a href="#" class="nav_close js-none" id="NavClose">
+
+                <a href="#" class="nav_btn nav_close js-none" id="NavClose">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
             </div>
@@ -213,24 +215,22 @@
         }
 
         // hamberger btn
-       function myFunction(){
-           
-       }
+        const hamburger = document.querySelector(".showmenu");
+        const navMenu = document.querySelector(".menu");
+        const navLink = document.querySelectorAll(".nav-link");
 
-// 漢堡選單
-let nav_btn = document.getElementById('NavBtn');
-let nav_close = document.getElementById('NavClose');
-let nav_body = document.getElementById('NavBody');
-nav_btn.addEventListener('click', function () {
-    nav_btn.classList.toggle('js-none');
-    nav_close.classList.toggle('js-none');
-    nav_body.classList.add('js-active');
-})
-nav_close.addEventListener('click', function(){
-    nav_btn.classList.toggle('js-none');
-    nav_close.classList.toggle('js-none');
-    nav_body.classList.remove('js-active');
-})
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
     </script>
 
 </body>
