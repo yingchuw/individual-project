@@ -125,11 +125,11 @@
 
 /* --------------- bottom banner ----------------*/
 .endBanner{
-    background-image: url(/About/intro_end.jpg);
+    /* background-image: url(/About/intro_end1400.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
+    background-size: cover; */
+    width: 100%;
     overflow: hidden;
 
     position: relative;
@@ -150,10 +150,3 @@
     width: 100%;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
