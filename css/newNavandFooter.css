@@ -40,6 +40,10 @@ h3{
     letter-spacing: 5px;
 }
 
+:root{
+    --nav-height: 80px;
+}
+
 /* ------------------ nav bar -------------------*/
 .header {
     /* height: 80px; */
