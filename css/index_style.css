@@ -32,15 +32,15 @@
     } 
 } 
 
-@media screen and (max-width: 991px){
+@media (max-width: 991px){
     .top_banner{
-        top: 80px;
+        top: calc(100% - var(--nav-height));
         width: 100%;
     }
 
     .top_banner .center_logo{
         width: 200px;
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -59,6 +59,19 @@
     height: 300px;
     margin-top: 50px;
     margin-left: 120px;
+}
+
+@media screen and (max-width: 991px){
+    .index_about{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .index_about img{
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .index_about_text{
@@ -91,19 +104,10 @@
 }
 
 @media screen and (max-width: 991px){
-    .index_about{
-        display: block;
-        width: 100%;
-        margin-top: 100px;
-    }
+    
 
     .index_about_text{
         width: 100%;
-        margin: 0 auto;
-    }
-
-    .index_about img{
-        max-width: 100%;
         margin: 0 auto;
     }
 

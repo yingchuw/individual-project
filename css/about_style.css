@@ -25,9 +25,8 @@
 
 @media screen and (max-width: 991px){
     .top_banner{
+        top: calc(100% - var(--nav-height));
         width: 100%;
-        top: 80px;
-        display: block;
     }
 
     .top_banner h2{
@@ -69,6 +68,10 @@
 }
 
 /* -------------- intro middle 圖片 ---------------*/
+.container .row .pic{
+    position: relative;
+}
+
 .container img{
     max-width: 100%;
     display:block;

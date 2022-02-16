@@ -20,6 +20,18 @@
     transform: translate(-50%, -50%);
 }
 
+@media (max-width: 991px){
+    .top_banner{
+        top: calc(100% - var(--nav-height));
+        width: 100%;
+    }
+
+    .top_banner h2{
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+}
+
 /* ------------------ intro -------------------*/
 .intro h3{
     text-align: center;
@@ -32,16 +44,27 @@
     margin-top: 30px;
 }
 
+.productListInner{
+    width: 100%;
+}
+
 .productList ul{
     overflow: hidden;
     display: table;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
+}
+
+@media (max-width: 991px){
+    .productList ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .productList ul li{
     display: table-cell;
-    padding: 10px;
     text-align: center;
     vertical-align: bottom;
     line-height: 1.5;
@@ -68,18 +91,6 @@
     width: 82px; 
 }
 
-/* .productList ul li a::after{
-    background: url(../Product/godown.svg) no-repeat center top;
-    width: 35px;
-    height: 18px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    display: block;
-    content: '';
-    margin-left: -17px;
-} */
-
 /* ------------------ product list -------------------*/
 
 .mainProduct{
@@ -87,21 +98,28 @@
 }
 
 .mainProduct .item{
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-    width: 1200px;
+    width: calc(100% - 200px);
     margin: 0 auto;
 }
 
+@media (max-width: 991px){
+    div.mainProduct {
+        width: 100%;
+    }
+    div.mainProduct .item{
+        width: 100%;
+    }
+}
+
 .item .itemInnerPic{
-    float: left;
     width: 475px;
-    text-align: right;
-    margin-top: 30px;
+    text-align:center;
 }
 
 .item .itemInnerText{
-    float: right;
-    margin-right: 45px;
     width: 470px;
 }
 
@@ -131,16 +149,17 @@
 
 .itemInnerPic > .ume{
     height: 300px;
-    margin-left: 220px;
     margin-top: 50px;
 }
 
 .itemInnerPic > .sakeume{
     height: 400px;
+    padding-top: 50px;
 }
 
 .itemInnerPic > .whiskyume{
     height: 400px;
+    padding-top: 50px;
 }
 
 .itemInnerPic > .shoume{
@@ -151,6 +170,13 @@
 .itemInnerPic > .awamoriume{
     height: 300px;
     margin-top: 50px;
+}
+
+@media (max-width: 767.98px){
+    .item .itemInnerPic{
+        width: 50%;
+        padding-right: 20px;
+    }
 }
 
 .addToList{
@@ -173,10 +199,9 @@
 
 .goBackList{
     overflow: hidden;
-    width: 1000px;
     margin: 0 auto;
-    padding: 10px;
-    border-bottom: 2px dashed #A6C609;
+    /* padding: 10px; */
+    /* border-bottom: 2px dashed #A6C609; */
 }
 
 .goBackList a{
@@ -188,18 +213,39 @@
     height: 30px;
 }
 
+@media (max-width: 991px){
+    .goBackList{
+        width: 100%;;
+    }
+}
 /* ------------------ 推薦喝法 -------------------*/
 .recommand{
     text-align: center;
     margin-top: 30px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .recommandInner{
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 20px 100px;
+    /* margin-bottom: 30px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px){
+    .recommandInner{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .recommandContent div{
+        width: 100%;
+    }
 }
 
 .recommandInner img{
@@ -215,15 +261,20 @@
     margin-top: 50px;
 }
 
-.recommandContent div{
+/* .recommandContent div{
     width: 300px;
-}
+} */
 
 .recommand2{
     border-left: 2px dashed #A6C609;
     border-right: 2px dashed #A6C609;
 }
 
+@media (max-width: 991px){
+    .recommand2{
+        border: none;
+    }
+}
 .recommandTitle{
     font-weight: bold;
     margin-bottom: 30px;
