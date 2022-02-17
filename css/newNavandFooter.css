@@ -86,6 +86,10 @@ h3{
     width: 100%;
 }
 
+.menu li{
+    width: 150px;
+}
+
 .menu li a {
     display: block;
     color: #1C1C1C;
@@ -260,11 +264,20 @@ h3{
     position: sticky;
     bottom: 0;
     height: 60px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 991px){
     .warning{
-        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:320px) and (max-width:575.98px){
+    .warning{
+        width: 100%;
         margin: 0 auto;
     }
 }
