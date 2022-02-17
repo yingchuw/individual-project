@@ -257,15 +257,16 @@ h3{
 
 /* --------------- 喝酒不開車 ----------------*/
 .warning{
-    background-image: url(../index/warning1200.svg);
+    background-image: url(../index/warning400.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 65%;
+    background-color: white;
     position: sticky;
     bottom: 0;
     height: 60px;
-    width: 80%;
-    margin: 0 auto;
+    /* width: 100%;
+    margin: 0 auto; */
 }
 
 @media screen and (max-width: 991px){
@@ -277,8 +278,8 @@ h3{
 
 @media (min-width:320px) and (max-width:575.98px){
     .warning{
-        width: 100%;
-        margin: 0 auto;
+        /* background-size: 100%;
+        background-position: center center; */
     }
 }
 
