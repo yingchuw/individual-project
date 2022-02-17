@@ -150,6 +150,10 @@
     transition: all 1s ease-out;
 }
 
+.index_product_list li .item1{
+    height: 300px;
+}
+
 .index_product_list li p{
     margin-bottom: 30px;
 }
