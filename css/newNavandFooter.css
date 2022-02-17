@@ -278,8 +278,7 @@ h3{
 
 @media (min-width:320px) and (max-width:575.98px){
     .warning{
-        /* background-size: 100%;
-        background-position: center center; */
+        background-size: 60%;
     }
 }
 
