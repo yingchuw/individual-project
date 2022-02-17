@@ -68,6 +68,7 @@ h3{
 @media (max-width: 991.98px){
     .header{
         height: var(--nav-height);
+        width: 100%;
     }
     
     .logo{
@@ -82,7 +83,7 @@ h3{
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 20px;
     width: 100%;
 }
 
@@ -109,7 +110,7 @@ h3{
     font-size: 30px;
     color: #1C1C1C;
     line-height: 80px;
-    margin: 0 10px;
+    margin-right: 10px;
     align-items: center;
     float: right;
 }
@@ -145,11 +146,11 @@ h3{
       }
 }
 
-@media (max-width: 991.98px){
+@media (max-width: 1000px){
     .header_icon{
         position: absolute;
         top: 0;
-        right: 15%;
+        right: 50px;
     }
 
 }
