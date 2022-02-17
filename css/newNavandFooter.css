@@ -141,12 +141,13 @@ h3{
       }
 }
 
-@media (min-width: 991.98px){
+/* @media (min-width: 991.98px){
     .hamburger--squeeze{
         position: absolute;
+        display: none;
         right: -100%;
     }
-}
+} */
 
 @media (max-width: 991.98px){
     .header_icon{
@@ -174,7 +175,8 @@ h3{
 }
 
 .hamburger {
-    display: inline-block;
+    display: none;
+    /* display: inline-block; */
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
