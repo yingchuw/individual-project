@@ -11,7 +11,7 @@
     position: relative;
 }
 
-.barThe{
+.top_banner .barThe{
     width: 100px;
     position: absolute;
     top: 35%;
@@ -19,7 +19,7 @@
     transform: translate(-50%, -50%);
 }
 
-.barLogo{
+.top_banner .barLogo{
     width: 600px;
     position: absolute;
     top: 60%;
@@ -27,33 +27,21 @@
     transform: translate(-50%, -50%);
 }
 
+@media (min-width:320px) and (max-width:767.98px){
+    .top_banner .barThe{
+        width: 80px;
+    }
+
+    .top_banner .barLogo{
+        width: 80%;
+    }
+}
+
 /* ------------------ intro -------------------*/
 .intro h3{
     text-align: center;
     margin: 20px 0 20px 0;
 }
-
-/* ------------------ bartender -------------------*/
-/* .bartenderIntro{
-    display: flex;
-    justify-content: center;
-    padding: 20px 120px 20px 120px;
-}
-
-.bartenderpic{
-    text-align: center;
-}
-
-.bartenderpic img{
-    height: 350px;
-    border-radius: 15px;
-    margin-right: 20px;
-}
-
-.bartenderpic p{
-    font-weight: bold;
-    padding: 20px;
-} */
 
 /* -------------- world class vedio --------------*/
 .embed-container { 
@@ -71,87 +59,51 @@
     height: 100%; 
 }
 
+/* ------------------ 調酒圖片輪播 -------------------*/
 
-/* ------------------ 調酒圖片區 -------------------*/
 .cocktail h3{
     text-align: center;
+    margin: 40px auto;
 }
 
-.cocktaillist ul{
-    width: 1200px;
-    height: 450px;
-    margin: 0 auto;
-    display: flex;
-    padding: 20px;
-}
-
-.cocktaillist li{
-    background-size: cover;
-    background-position: center center;
-    transition: .5s;
-}
-
-.c1{
-    background-image: url(../Bar/cocktail/c1.jpg);
-    flex-grow: 2;
+.slider {
+    width: 80%;
+    margin: 50px auto;
     position: relative;
 }
 
-.c2{
-    background-image: url(../Bar/cocktail/c2.jpg);
-    flex-grow: 2;
-    position: relative;
+.slick-slide {
+  margin: 0px 10px;
 }
 
-.c3{
-    background-image: url(../Bar/cocktail/c3.jpg);
-    flex-grow: 3;
-    position: relative;
+.slick-slide img {
+  height: 300px;
+  margin: 0 auto;
+  vertical-align: bottom;
 }
 
-.c4{
-    background-image: url(../Bar/cocktail/c4.jpg);
-    flex-grow: 4;
-    position: relative;
+.slick-prev:before,
+.slick-next:before {
+  color: black;
 }
 
-.c5{background-image: url(../Bar/cocktail/c5.jpg);
-    flex-grow: 5;
-    position: relative;
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
 }
 
-.cocktaillist li:hover{
-    flex-grow: 6;
+.slick-active {
+  opacity: 1;
 }
 
-.cocktaillist p{
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 25px;
-    width: 150px; 
-    height: 150px;
-    background-color: whitesmoke;
-    opacity: .8;
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-
-    transform:scaleY(0);
-    transition:transform .5s;
+.slick-current {
+  opacity: 1;
 }
 
-.cocktaillist li:hover p{
-    display: block; 
-    transform:scaleY(1);
-}
 
 /* --------------- 地址 & google map ----------------*/
 .baradd h3{
-    margin-top: 30px;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -160,7 +112,8 @@
 }
 
 .baradd iframe{
+    width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
