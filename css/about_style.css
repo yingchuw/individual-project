@@ -65,7 +65,7 @@
     }
 }
 
-/* -------------- intro middle 圖片 ---------------*/
+/* -------- intro middle 圖片 & intro end --------*/
 .container .row .pic{
     position: relative;
 }
@@ -102,7 +102,7 @@
     }
 }
 
-/* -------------- End ---------------*/
+/* -------------- END banner ---------------*/
 .endBanner{
     width: 100%;
     margin: 0 auto;
@@ -123,22 +123,40 @@
     width: 100%;
 }
 
-.endBanner a {
+.endBanner .endbtn{
+    position: absolute;
+    
+    margin: 0 auto;
+    top: 45%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.endBanner .endbtn a {
     display: block;
     height: 40px;
     width: 150px;
     background-color:#1C1C1C;
     color: whitesmoke;
     text-align: center;
-    line-height: 40px;
-    margin-top: 20px;
+    line-height: 40px;    
     border-radius: 5px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
+
+
+.endBanner .endbtn {
+    animation: bounce 2s cubic-bezier(0.280, 0.840, 0.420, 1) infinite alternate;
+  }
+
+  @keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-30px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-10px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+  } 
 
 .endBanner a:hover{
     background-color:#BF5B04;
@@ -148,5 +166,9 @@
     .endBanner h3{
         font-size: 1.5rem;
         padding: 10px;
+    }
+
+    .endBanner a{
+        margin-top: 20px;
     }
 }
