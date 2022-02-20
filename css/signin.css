@@ -1,39 +1,52 @@
 /* ------------------ 會員註冊表單 head -------------------*/
 .signInHead h3{
     text-align: center;
-    margin: 20px 0 20px 0;
+    padding: 20px;
 }
 
 /* ------------------ 會員註冊表單 content -------------------*/
-
-.signContent{
-    width: 800px;
+.signIn{
+    width: 80%;
     margin: 0 auto;
 }
 
-.form li{
-    margin: 10px;
-    letter-spacing: 5px;
+.signContent{
+    width: 50%;
+    margin: 0 auto;
 }
 
-.formName{
-    display: flex;
+.form .formInner li{
+   padding: 10px;
+   letter-spacing: 5px;
+   border-radius: 3px;
 }
 
-.formInner input{
-    border-radius: 3px;
+.form .formInner li input{
     height: 50px;
+    width: 100%;
 }
 
 .agreebox{
     padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .submitBtn{
+    padding: 10px;
     text-align: center;
 }
 .submitBtn button{
-    margin: 10px;
     width: 100px;
     height: 30px;
+}
+
+@media (max-width: 767.98px){
+    .signIn{
+        width: 100%;
+    }
+
+    .signContent{
+        width: 80%;
+    }
 }

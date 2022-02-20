@@ -1,16 +1,12 @@
-/* ------------------ 會員登入表單 head -------------------*/
-.login{
-    width: 400px;
-    margin: 0 auto;
+/* ------------ 會員登入表單 head ------------*/
+.modal-content h3{
     text-align: center;
-}
-.login h3{
-    text-align: center;
-    margin: 20px 0 20px 0;
+    padding: 20px;
 }
 
-.loginMain{
-    margin-bottom: 30px;
+.loginMain,
+.forgetPasswd{
+    padding: 20px;
 }
 
 .loginMain input, .forgetPasswd input{
@@ -22,11 +18,64 @@
     margin-bottom: 20px;
 }
 
-.login button{
+.modal-content button{
     width: 50px;
     height: 30px;
 }
 
-.forgetPasswd{
-    margin-bottom: 100px;
+@media (max-width: 991.98px){
+    .loginMain,
+    .loginMain input, 
+    .forgetPasswd input{
+        width: 100%;
+    }
+}
+
+/* ------------ modal box ------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 300;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* height: 100%; */
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.modal .modal-content > .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991.98px){
+    .modal .modal-content{
+        width: 60%;
+    }
+}
+
+@media (max-width: 797.98px){
+    .modal .modal-content{
+        width: 85%;
+        margin: 0 auto;
+    }
 }

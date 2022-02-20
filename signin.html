@@ -21,33 +21,32 @@
 
 <body>
     <div id="wrap">
-        <!-- 導覽列 -->
+        <!-- 新導覽列 -->
         <nav class="header">
             <div class="logo">
                 <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
-            <ul class="menu">
-                <li class="menu_list">
+            <ul class="menu" id="NavBody">
+                <li class="nav_items">
                     <a href="about.html">關於梅屋<br>ABOUT US</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="product.html">商品一覽<br>PRODUCTS</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="bar.html">品梅吧<br>UME BAR</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="store.html">梅屋商店<br>OUR STORE</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="contact.html">聯絡我們<br>CONTACT US</a>
                 </li>
             </ul>
 
             <div class="header_icon">
-                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="showmenu"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
     </div>
@@ -63,21 +62,20 @@
                 <div class="form">
                     <ul class="formInner">
                         <li>姓名*</li>
-                        <div class="formName">
-                            <li><input type="text" value name="customer[first_name]" size="30" placeholder="姓"></li>
+                        <div class="name">
+                            <li><input type="text" name="customer[first_name]" size="30" placeholder="姓"></li>
                             <li><input type="text" name="customer[last_name]" size="30" placeholder="名"></li>
                         </div>
                         <li>電子郵件地址*<br>
                             ※電子郵件地址將作為登入帳號，敬請填寫正確資訊，以免喪失會員權益。</li>
-                        <li><input type="email" value name="customer[email]" size="50" placeholder="example@gmail.com">
+                        <li><input type="email" name="customer[email]" size="50" placeholder="example@gmail.com">
                         </li>
                         <li>生日*</li>
-                        <li><input type="text" name="customer[birthday]" placeholder="請輸入您的生日"></li>
-                        <li></li>
+                        <li><input type="date" name="customer[birthday]" placeholder="請輸入您的生日"></li>
                         <li>密碼*</li>
-                        <li><input type="text" name="customer[password]" placeholder="請輸入您的密碼"></li>
+                        <li><input type="password" name="customer[password]" placeholder="請輸入您的密碼"></li>
                         <li>再次確認密碼*</li>
-                        <li><input type="text" name="customer[password]" placeholder="請再次輸入您的密碼"></li>
+                        <li><input type="password" name="customer[password]" placeholder="請再次輸入您的密碼"></li>
                     </ul>
                     <div class="agreebox">
                         <label class="agreeInner" for="">

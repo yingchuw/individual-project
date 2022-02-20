@@ -8,6 +8,7 @@
     <title>梅屋 UMEYA</title>
     <link rel="stylesheet" href="./css/newNavandFooter.css">
     <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/ham.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,8 +47,33 @@
             </ul>
 
             <div class="header_icon">
-                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a id ="myBtn" href="#"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="loginHead">
+                        <h3>會員登入 / 註冊</h3>
+                    </div>
+                    <div class="loginMain">
+                        <input type="email" placeholder="請輸入註冊Email" size="50">
+                        <br>
+                        <input type="password" placeholder="請輸入密碼" size="30">
+                        <br>
+                        <button type="submit">登入</button>
+                        <a href="signin.html"><button type="submit">註冊</button></a>
+                    </div>
+                    <hr class="divider">
+                    <div class="forgetPasswd">
+                        <h3>忘記密碼</h3>
+                        <input type="email" placeholder="請輸入註冊Email" size="50">
+                        <br>
+                        <button type="submit">送出</button>
+                    </div>
+                </div>
             </div>
 
             <!-- <button class="hamburger hamburger--squeeze is active" type="button">
@@ -182,7 +208,6 @@
 
         });
 
-
         // JavaScript 版本
         document.addEventListener("DOMContentLoaded", function () {
 
@@ -192,6 +217,25 @@
             });
 
         });
+    </script>
+    <script>
+        // modal box
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     </script>
 
 </body>

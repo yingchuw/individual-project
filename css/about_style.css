@@ -128,7 +128,7 @@
     
     margin: 0 auto;
     top: 45%;
-    right: 50%;
+    right: 45%;
     transform: translateX(50%);
 }
 
@@ -170,5 +170,25 @@
 
     .endBanner a{
         margin-top: 20px;
+    }
+
+    .endBanner .endbtn{
+        position: absolute;
+        
+        margin: 0 auto;
+        top: 45%;
+        right: 40%;
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    .endBanner .endbtn{
+        position: absolute;
+        
+        margin: 0 auto;
+        top: 45%;
+        right: 35%;
+        transform: translateX(50%);
     }
 }

@@ -8,6 +8,7 @@
     <title>梅屋 UMEYA</title>
     <link rel="stylesheet" href="./css/newNavandFooter.css">
     <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,34 +22,64 @@
 
 <body>
     <div id="wrap">
-        <!-- 導覽列 -->
+        <!-- 新導覽列 -->
         <nav class="header">
             <div class="logo">
                 <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
-            <ul class="menu">
-                <li class="menu_list">
+            <ul class="menu" id="NavBody">
+                <li class="nav_items">
                     <a href="about.html">關於梅屋<br>ABOUT US</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="product.html">商品一覽<br>PRODUCTS</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="bar.html">品梅吧<br>UME BAR</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="store.html">梅屋商店<br>OUR STORE</a>
                 </li>
-                <li>
+                <li class="nav_items">
                     <a href="contact.html">聯絡我們<br>CONTACT US</a>
                 </li>
             </ul>
 
             <div class="header_icon">
-                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="showmenu"><i class="fa fa-bars"></i></a>
             </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="loginHead">
+                        <h3>會員登入 / 註冊</h3>
+                    </div>
+                    <div class="loginMain">
+                        <input type="email" placeholder="請輸入註冊Email" size="50">
+                        <br>
+                        <input type="password" placeholder="請輸入密碼" size="30">
+                        <br>
+                        <button type="submit">登入</button>
+                        <a href="signin.html"><button type="submit">註冊</button></a>
+                    </div>
+                    <hr class="divider">
+                    <div class="forgetPasswd">
+                        <h3>忘記密碼</h3>
+                        <input type="email" placeholder="請輸入註冊Email" size="50">
+                        <br>
+                        <button type="submit">送出</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <button class="hamburger hamburger--squeeze is active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> -->
         </nav>
     </div>
 
@@ -143,6 +174,25 @@
         function topFunction() {
             document.body.scrollTop = 0; // for safari
             document.documentElement.scrollTop = 0; // for chrome
+        }
+    </script>
+    <script>
+        // modal box
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
     </script>
 </body>
