@@ -27,28 +27,21 @@
             <div class="logo">
                 <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
             </div>
-            <ul class="menu" id="NavBody">
-                <li class="nav_items">
-                    <a href="about.html">關於梅屋<br>ABOUT US</a>
-                </li>
-                <li class="nav_items">
-                    <a href="product.html">商品一覽<br>PRODUCTS</a>
-                </li>
-                <li class="nav_items">
-                    <a href="bar.html">品梅吧<br>UME BAR</a>
-                </li>
-                <li class="nav_items">
-                    <a href="store.html">梅屋商店<br>OUR STORE</a>
-                </li>
-                <li class="nav_items">
-                    <a href="contact.html">聯絡我們<br>CONTACT US</a>
-                </li>
-            </ul>
-
+            <div class="menu" id="myTopnav">
+                <a href="about.html" class="active">關於梅屋<br>ABOUT US</a>
+                <a href="product.html">商品一覽<br>PRODUCTS</a>
+                <a href="bar.html">品梅吧<br>UME BAR</a>
+                <a href="store.html">梅屋商店<br>OUR STORE</a>
+                <a href="contact.html">聯絡我們<br>CONTACT US</a>
+            </div>
             <div class="header_icon">
                 <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
                 <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -74,11 +67,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <button class="hamburger hamburger--squeeze is active" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button> -->
         </nav>
 
         <!-- Top Banner -->
@@ -152,6 +140,18 @@
             </ul>
         </footer>
     </div>
+
+    <script>
+        // hamburger btn
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "menu") {
+                x.className += "responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
 
     <script>
         // modal box

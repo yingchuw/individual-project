@@ -46,67 +46,62 @@ h3{
 
 /* ------------------ nav bar -------------------*/
 .header {
-    /* height: 80px; */
+    position: relative;
     display: flex;
     justify-content: center;
-    position: relative;
     width: 100%;
     text-align: center;
   }
 
-.logo{
-    
+.header .logo{
     display: block;
     padding: 5px;
     margin-left: 10px;
 }
 
-.logo img{
+.header .logo img{
     width: 70px;
 }
 
-@media (max-width: 991.98px){
+@media screen and (max-width: 991.98px){
     .header{
         height: var(--nav-height);
         width: 100%;
     }
     
-    .logo{
+    .header .logo{
         position: absolute;
         top: 0;
         left: 5px;
     }
 }
 
-.menu{
+.header .menu{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 0 20px;
     width: 100%;
 }
 
-.menu li{
-    width: 150px;
-}
-
-.menu li a {
+.header .menu a {
     display: block;
-    color: #1C1C1C;
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
-    transition: all .3s;
 }
 
-.header_icon{
+.header .menuresponsive{
+    display: none;
+}
+
+.header .header_icon{
     width: fit-content;
     align-items: center;
     display: flex;
 }
 
-.header_icon i{
+.header .header_icon i{
     font-size: 30px;
     color: #1C1C1C;
     line-height: 80px;
@@ -115,48 +110,85 @@ h3{
     float: right;
 }
      
-.header .menu li a:hover, .header_icon i:hover{
+.header .menu a:hover,
+.header .header_icon i:hover{
     color: #BF5B04;
 }
 
-@media (max-width: 991.98px){
-    .menu {        
-        display: flex;
+@media screen and (max-width: 991.98px){
+    .header .menu {        
+        width: 80%;
+        margin-left: 100px;
+    }
+    
+    .header .menu a {
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        position: relative;
+    }
+    .header .menu {        
+        /* display: flex;
         flex-direction: column;
 
         position: fixed;
         top: var(--nav-height);
         height: fit-content;
         width: 100%;
+        margin: 0 auto;
         background-color: whitesmoke;
         z-index: 100;
         text-align: center;
         transition: all .3s;
-        cursor: pointer;
+        cursor: pointer; */
 
         display: none;
       }
 
-      .menu li{
-          width: 100%;
-      }
-
-      .menu li:hover a{
-        border: 1px dashed #BF5B04;
-      }
-}
-
-@media (max-width: 1000px){
-    .header_icon{
-        position: absolute;
-        top: 0;
-        right: 50px;
+    .header .menuresponsive{
+        position: absolute; 
+        display: flex; 
+        flex-direction: column;
+        z-index: 1000;
+        top: var(--nav-height);
+        width: 100%;
+        margin: 0 auto;
     }
 
+    .header .menuresponsive a{
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+
+    .header .menuresponsive a:hover{
+        border:1px dashed #BF5B04;
+        color: #1C1C1C;
+    }
 }
 
 /* --------------- hamburger btn ----------------*/
+.header .icon {
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    align-self: center;
+}
 
+.header .icon:hover{
+    color: #1C1C1C;
+}
+
+@media screen and (max-width: 800px){
+    .header .icon{
+        position: absolute;
+        display: block;
+        right: 0;
+    }
+}
 
 /* --------------- 喝酒不開車 ----------------*/
 .warning{

@@ -18,51 +18,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
         integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="wrap">
-        <header class="header">
-            <div class="logo"><a href="index.html"><img src="./Logo/main logo.svg" alt=""></a></div>
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="about.html" class="active">關於梅屋<br>ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="product.html">商品一覽<br>PRODUCTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="bar.html">品梅吧<br>UME BAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="store.html">梅屋商店<br>OUR STORE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html">聯絡我們<br>CONTACT US</a>
-                    </li>
-                    <li>
-                        <a href="login.html"><i class="fas fa-user"></i></a>
-                    </li>
-                    <li>
-                        <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
-
-
-
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

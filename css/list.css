@@ -1,36 +1,49 @@
 /* ------------------ list head -------------------*/
 .listHead h3{
     text-align: center;
-    margin: 20px 0 20px 0;
+    padding: 20px;
+    width: 100%;
 }
 
 .listContent{
-   width: 800px;
+   width: 80%;
    margin: 0 auto;
-   padding-top: 20px;
-   margin-bottom: 20px;
+   padding: 20px;
    border-top: 1px solid #1C1C1C;
    border-bottom: 1px solid #1C1C1C;
+}
+
+@media screen and (max-width: 991.98px) {
+    .listContent{
+        width: 100%;
+    }
 }
 
 .listContent ul{
     align-items: center;
 }
 
-.listContent li{
+@media screen and (max-width: 991.98px) {
+    .listContent{
+        width: 100%;
+    }
+}
+
+.listContent ul li{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     align-items: center;
 }
 
-.listContent .listItem{
+.listContent ul li > .listItem{
     justify-content: center;
 }
 
-.listContent .listProduct{
+.listContent ul li > .listProduct{
     height: 150px;
-}
+    justify-content: center;
+
 
 .listContent .fa-trash-alt{
     font-size: 20px;
@@ -48,12 +61,14 @@
 }
 /* ------------------ list form -------------------*/
 .listForm{
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .listForm input{
-    width: 800px;
+    width: 50%;
     height: 50px;
     margin-bottom: 20px;
 }
