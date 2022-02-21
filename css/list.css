@@ -44,7 +44,6 @@
 .listContent table .content .listProduct{
     display: block;
     width: 50px;
-
 }
 
 .listContent ul .listTitle p{
@@ -64,15 +63,11 @@
     font-size: 20px;
 }
 
-/* .listItem p{
-    margin: 0 50px 0 50px;
-} */
-
 .listItem .listNum{
     height: 40px;
     width: 40px;
-    /* margin-left: 150px; */
 }
+
 /* ------------------ list form -------------------*/
 .listForm{
     width: 80%;
@@ -122,6 +117,7 @@
         width: 90%;
     }
 }
+
 /* ------------------ button -------------------*/
 .listBtn{
     width: 70%;
