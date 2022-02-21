@@ -6,7 +6,7 @@
 }
 
 .listContent{
-   width: 80%;
+   width: 60%;
    margin: 0 auto;
    padding: 20px;
    border-top: 1px solid #1C1C1C;
@@ -19,45 +19,59 @@
     }
 }
 
-.listContent ul{
-    align-items: center;
 }
-
 @media screen and (max-width: 991.98px) {
     .listContent{
         width: 100%;
     }
 }
 
+.listContent ul > .listTitle{
+    margin-bottom: 20px;
+}
+
 .listContent ul li{
     display: flex;
-    justify-content: space-around;
-    /* margin-bottom: 20px; */
+    justify-content: center;
     align-items: center;
+    margin: 0 20px;
 }
 
-.listContent ul li > .listItem{
-    justify-content: center;
+.listContent table .head{
+    padding: 20px;
+} 
+
+.listContent table .content .listProduct{
+    display: block;
+    width: 50px;
+
 }
 
-.listContent ul li > .listProduct{
-    height: 150px;
-    justify-content: center;
+.listContent ul .listTitle p{
+    margin: 0 50px;
+}
+.listContent ul .listItem > .listProduct{
+    height: 100px;
+    margin: 0 50px;
+}
 
+.listContent ul .listItem p,
+.listContent ul .listItem input{
+    margin: 0 50px;
+}
 
 .listContent .fa-trash-alt{
     font-size: 20px;
-    margin-left: 30px;
 }
 
-.listItem p{
+/* .listItem p{
     margin: 0 50px 0 50px;
-}
+} */
 
 .listItem .listNum{
     height: 40px;
     width: 40px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 /* ------------------ list form -------------------*/
 .listForm{
@@ -68,20 +82,33 @@
 }
 
 .listForm input{
-    width: 50%;
+    width: 70%;
     height: 50px;
     margin-bottom: 20px;
 }
 
+@media screen and (max-width:767.98px) {
+    .listForm,
+    .listForm input{
+        width: 90%;
+    }
+}
+
 .checkAge{
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
 }
 
+@media screen and (max-width:767.98px) {
+    .checkAge{
+        width: 100%;
+    }
+}
+
 .claim{
-    width: 800px;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -90,15 +117,27 @@
     line-height: 1.6;
 }
 
+@media screen and (max-width:767.98px) {
+    .claim{
+        width: 90%;
+    }
+}
 /* ------------------ button -------------------*/
 .listBtn{
-    width: 800px;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 }
 
-.listBtn .sendBtn, .listBtn .keepBtn{
+.listBtn .sendBtn, 
+.listBtn .keepBtn{
     width: 150px;
     height: 30px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:767.98px) {
+    .listBtn{
+        width: 100%;
+    }
 }
