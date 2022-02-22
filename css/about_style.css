@@ -26,11 +26,6 @@
         top: calc(100% - var(--nav-height));
         width: 100%;
     }
-
-    .top_banner h2{
-        margin: 0 auto;
-        font-size: 3rem;
-    }
 }
 
 /* ------------------ intro top -------------------*/
