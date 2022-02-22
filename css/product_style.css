@@ -217,9 +217,9 @@
 /* ------------------ 推薦喝法 -------------------*/
 .recommand{
     text-align: center;
-    margin-top: 30px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .recommandInner{
@@ -227,7 +227,6 @@
     text-align: center;
     justify-content: center;
     padding: 20px 100px;
-    /* margin-bottom: 30px; */
     width: 100%;
     margin: 0 auto;
 }
@@ -256,10 +255,6 @@
 .recommand3 img{
     margin-top: 50px;
 }
-
-/* .recommandContent div{
-    width: 300px;
-} */
 
 .recommand2{
     border-left: 2px dashed #A6C609;

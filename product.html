@@ -86,35 +86,35 @@
         <div class="productList">
             <ul class="productListInner">
                 <li class="productListInnerText">
-                    <a href="#">
+                    <a href="#ume1">
                         <img src="./Product/Product pic/product-2.png" alt="">
                         <p class="productTitle">手工酒梅</p>
                         <i class="fas fa-angle-double-down"></i>
                     </a>
                 </li>
                 <li class="productListInnerText">
-                    <a href="#">
+                    <a href="#ume2">
                         <img src="./index/index product/2.png" alt="">
                         <p class="productTitle">清酒梅酒</p>
                         <i class="fas fa-angle-double-down"></i>
                     </a>
                 </li>
                 <li class="productListInnerText">
-                    <a href="#">
+                    <a href="#ume3">
                         <img src="./index/index product/3.png" alt="">
                         <p class="productTitle">威士忌梅酒</p>
                         <i class="fas fa-angle-double-down"></i>
                     </a>
                 </li>
                 <li class="productListInnerText">
-                    <a href="#">
+                    <a href="#ume4">
                         <img src="./index/index product/4.png" alt="">
                         <p class="productTitle">燒灼梅酒</p>
                         <i class="fas fa-angle-double-down"></i>
                     </a>
                 </li>
                 <li class="productListInnerText">
-                    <a href="#">
+                    <a href="#ume5">
                         <img src="./index/index product/5.png" alt="">
                         <p class="productTitle">泡盛梅酒</p>
                         <i class="fas fa-angle-double-down"></i>
@@ -124,7 +124,7 @@
         </div>
 
         <!-- product list 手工醉梅 -->
-        <div class="mainProduct">
+        <div class="mainProduct" id="ume1">
             <div class="item">
                 <div class="itemInnerPic">
                     <img class="ume" src="./Product/Product pic/product-2.png" alt="">
@@ -162,15 +162,15 @@
                     <div class="addToList">
                         <a href="#">加入清單</a>
                     </div>
-                    <div class="goBackList">
+                    <!-- <div class="goBackList">
                         <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <!-- product list 清酒梅酒 -->
-        <div class="mainProduct">
+        <div class="mainProduct" id="ume2">
             <div class="item">
                 <div class="itemInnerPic">
                     <img class="sakeume" src="./Product/Product pic/product-1 (2).png" alt="">
@@ -208,15 +208,15 @@
                     <div class="addToList">
                         <a href="#">加入清單</a>
                     </div>
-                    <div class="goBackList">
+                    <!-- <div class="goBackList">
                         <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <!-- product list 威士忌梅酒 -->
-        <div class="mainProduct">
+        <div class="mainProduct" id="ume3">
             <div class="item">
                 <div class="itemInnerPic">
                     <img class="whiskyume" src="./Product/Product pic/product-7.png" alt="">
@@ -254,15 +254,15 @@
                     <div class="addToList">
                         <a href="#">加入清單</a>
                     </div>
-                    <div class="goBackList">
+                    <!-- <div class="goBackList">
                         <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <!-- product list 燒酌梅酒 -->
-        <div class="mainProduct">
+        <div class="mainProduct" id="ume4">
             <div class="item">
                 <div class="itemInnerPic">
                     <img class="shoume" src="./Product/Product pic/product-6.png" alt="">
@@ -298,15 +298,15 @@
                     <div class="addToList">
                         <a href="#">加入清單</a>
                     </div>
-                    <div class="goBackList">
+                    <!-- <div class="goBackList">
                         <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <!-- product list 泡盛梅酒 -->
-        <div class="mainProduct">
+        <div class="mainProduct" id="ume5">
             <div class="item">
                 <div class="itemInnerPic">
                     <img class="awamoriume" src="./Product/Product pic/whiskyume.png" alt="">
@@ -344,9 +344,9 @@
                     <div class="addToList">
                         <a href="#">加入清單</a>
                     </div>
-                    <div class="goBackList">
+                    <!-- <div class="goBackList">
                         <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -456,6 +456,27 @@
             }
         }
     </script>
+
+    <script>
+        // fas fa-angle-double-down
+        const links = document.querySelectorAll(".productList ul a");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+            const offsetTop = document.querySelector(href).offsetTop;
+
+            scroll({
+                top: offsetTop,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    
 </body>
 
 </html>
