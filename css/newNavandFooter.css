@@ -117,6 +117,9 @@ h3 {
   width: fit-content;
   align-items: center;
   display: flex;
+
+  position: relative;
+
 }
 
 .header .header_icon i {
@@ -126,6 +129,22 @@ h3 {
   margin: 0 10px;
   align-items: center;
   float: right;
+}
+
+.header .header_icon span{
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    border-radius: 100%;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 1;
+    color: whitesmoke;
+    background: #bf5b04;
 }
 
 .header .menu a:hover,
