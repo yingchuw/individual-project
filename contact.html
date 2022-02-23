@@ -1,177 +1,210 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>梅屋 UMEYA</title>
-    <link rel="stylesheet" href="./css/newNavandFooter.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/newNavandFooter.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <!-- 新導覽列 -->
+      <!-- 新導覽列 -->
+      <div class="fixed">
         <nav class="header">
-            <div class="logo">
-                <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
-            </div>
-            <div class="menu" id="myTopnav">
-                <a href="about.html" class="active">關於梅屋<br>ABOUT US</a>
-                <a href="product.html">商品一覽<br>PRODUCTS</a>
-                <a href="bar.html">品梅吧<br>UME BAR</a>
-                <a href="store.html">梅屋商店<br>OUR STORE</a>
-                <a href="contact.html">聯絡我們<br>CONTACT US</a>
-            </div>
-            <div class="header_icon">
-                <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
-                <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-            </div>
+          <div class="logo">
+            <a href="index.html"><img src="./Logo/main logo.svg" alt="" /></a>
+          </div>
+          <div class="menu" id="myTopnav">
+            <a href="about.html" class="active">關於梅屋<br />ABOUT US</a>
+            <a href="product.html">商品一覽<br />PRODUCTS</a>
+            <a href="bar.html">品梅吧<br />UME BAR</a>
+            <a href="store.html">梅屋商店<br />OUR STORE</a>
+            <a href="contact.html">聯絡我們<br />CONTACT US</a>
+          </div>
+          <div class="header_icon">
+            <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
+            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="loginHead">
-                        <h3>會員登入 / 註冊</h3>
-                    </div>
-                    <div class="loginMain">
-                        <input type="email" placeholder="請輸入註冊Email" size="50">
-                        <br>
-                        <input type="text" placeholder="請輸入密碼" size="30">
-                        <br>
-                        <button type="submit">登入</button>
-                        <a href="signin.html"><button type="submit">註冊</button></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="forgetPasswd">
-                        <h3>忘記密碼</h3>
-                        <input type="email" placeholder="請輸入註冊Email" size="50">
-                        <br>
-                        <button type="submit">送出</button>
-                    </div>
-                </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="loginHead">
+                <h3>會員登入 / 註冊</h3>
+              </div>
+              <div class="loginMain">
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <input type="text" placeholder="請輸入密碼" size="30" />
+                <br />
+                <button type="submit">登入</button>
+                <a href="signin.html"><button type="submit">註冊</button></a>
+              </div>
+              <hr class="divider" />
+              <div class="forgetPasswd">
+                <h3>忘記密碼</h3>
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <button type="submit">送出</button>
+              </div>
             </div>
+          </div>
         </nav>
+      </div>
 
-        <!-- Top Banner -->
-        <div class="top_banner">
-            <h2>聯絡我們</h2>
-        </div>
+      <!-- Top Banner -->
+      <div class="top_banner">
+        <h2>聯絡我們</h2>
+      </div>
 
-        <!-- intro -->
-        <div class="intro">
-            <p>
-                若您有任何需要我們服務的地方，請填寫以下表單表達您的意見，我們收到您的來信後，將儘速於 3～5 日內回覆（不含週六例假日）。<br>
-                若您超過時間尚未收到我們的回信，或您的問題尚未得到解決，
-                請撥打梅屋客服專線 0800-888-888 (週一至週五，早上九點至下午五點)<br>
-                ＊以下欄位均為必填，敬請詳細填寫。
-            </p>
-        </div>
+      <!-- intro -->
+      <div class="intro">
+        <p>
+          若您有任何需要我們服務的地方，請填寫以下表單表達您的意見，我們收到您的來信後，將儘速於
+          3～5 日內回覆（不含週六例假日）。<br />
+          若您超過時間尚未收到我們的回信，或您的問題尚未得到解決，
+          請撥打梅屋客服專線 0800-888-888 (週一至週五，早上九點至下午五點)<br />
+          ＊以下欄位均為必填，敬請詳細填寫。
+        </p>
+      </div>
 
-        <!-- Contact inner -->
-        <div class="contactInner">
-            <form action="#" class="contactForm" method="post" accept-charset="utf-8">
-                <div class="formItem">
-                    <div class="formInput">
-                        <input type="text" placeholder="請填寫姓名*" required="required">
-                    </div>
-                </div>
-                <div class="formItem">
-                    <div class="formInput">
-                        <input type="text" placeholder="請填寫聯絡E-mail*" required="required">
-                    </div>
-                </div>
-                <div class="formItem">
-                    <div class="formInput">
-                        <input type="text" placeholder="請填寫電話*" required="required">
-                    </div>
-                </div>
-                <div class="formItem">
-                    <textarea placeholder="請填寫訊息*"></textarea>
-                </div>
-            </form>
-        </div>
-
-        <div class="agreebox">
-            <div class="agreeInner" for="">
-                <input type="checkbox" name="iagree" value="1" id="agree">
-                <span>
-                    我已閱讀並同意
-                    <a href="#"><u>隱私權與個資保護聲明</u></a>
-                </span>
+      <!-- Contact inner -->
+      <div class="contactInner">
+        <form
+          action="#"
+          class="contactForm"
+          method="post"
+          accept-charset="utf-8"
+        >
+          <div class="formItem">
+            <div class="formInput">
+              <input
+                type="text"
+                placeholder="請填寫姓名*"
+                required="required"
+              />
             </div>
+          </div>
+          <div class="formItem">
+            <div class="formInput">
+              <input
+                type="text"
+                placeholder="請填寫聯絡E-mail*"
+                required="required"
+              />
+            </div>
+          </div>
+          <div class="formItem">
+            <div class="formInput">
+              <input
+                type="text"
+                placeholder="請填寫電話*"
+                required="required"
+              />
+            </div>
+          </div>
+          <div class="formItem">
+            <textarea placeholder="請填寫訊息*"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <div class="agreebox">
+        <div class="agreeInner" for="">
+          <input type="checkbox" name="iagree" value="1" id="agree" />
+          <span>
+            我已閱讀並同意
+            <a href="#"><u>隱私權與個資保護聲明</u></a>
+          </span>
         </div>
+      </div>
 
-        <div class="agreeSend">
-            <button align-center type="button" class="sendBtn">
-                送出
-            </button>
-        </div>
+      <div class="agreeSend">
+        <button align-center type="button" class="sendBtn">送出</button>
+      </div>
 
-        <!-- 酒後不開車聲明 -->
-        <div class="warning"></div>
+      <!-- 酒後不開車聲明 -->
+      <div class="warning"></div>
 
-        <!-- footer -->
-        <footer id="footer">
-            <ul class="footer_inner">
-                <p>本網站為緯育TibaMe前端設計工程師TFD105班學員專題作品，僅供學習、展示之用。</p>
-                <div class="footer_icon">
-                    <li><a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/" target="window name2">
-                            <i class="fab fa-instagram"></i></a></li>
-                </div>
-            </ul>
-        </footer>
+      <!-- footer -->
+      <footer id="footer">
+        <ul class="footer_inner">
+          <p>
+            本網站為緯育TibaMe前端設計工程師TFD105班學員專題作品，僅供學習、展示之用。
+          </p>
+          <div class="footer_icon">
+            <li>
+              <a href="https://zh-tw.facebook.com" target="window name"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="window name2">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </div>
+        </ul>
+      </footer>
     </div>
 
     <script>
-        // hamburger btn
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "menu") {
-                x.className += "responsive";
-            } else {
-                x.className = "menu";
-            }
+      // hamburger btn
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "menu") {
+          x.className += "responsive";
+        } else {
+          x.className = "menu";
         }
+      }
     </script>
 
     <script>
-        // modal box
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+      // modal box
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
 
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
 
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
+      };
     </script>
-</body>
-
+  </body>
 </html>

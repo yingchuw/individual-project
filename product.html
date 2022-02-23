@@ -31,51 +31,53 @@
   <body>
     <div id="wrap">
       <!-- 新導覽列 -->
-      <nav class="header">
-        <div class="logo">
-          <a href="index.html"><img src="./Logo/main logo.svg" alt="" /></a>
-        </div>
-        <div class="menu" id="myTopnav">
-          <a href="about.html" class="active">關於梅屋<br />ABOUT US</a>
-          <a href="product.html">商品一覽<br />PRODUCTS</a>
-          <a href="bar.html">品梅吧<br />UME BAR</a>
-          <a href="store.html">梅屋商店<br />OUR STORE</a>
-          <a href="contact.html">聯絡我們<br />CONTACT US</a>
-        </div>
-        <div class="header_icon">
-          <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
-          <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-        </div>
+      <div class="fixed">
+        <nav class="header">
+          <div class="logo">
+            <a href="index.html"><img src="./Logo/main logo.svg" alt="" /></a>
+          </div>
+          <div class="menu" id="myTopnav">
+            <a href="about.html" class="active">關於梅屋<br />ABOUT US</a>
+            <a href="product.html">商品一覽<br />PRODUCTS</a>
+            <a href="bar.html">品梅吧<br />UME BAR</a>
+            <a href="store.html">梅屋商店<br />OUR STORE</a>
+            <a href="contact.html">聯絡我們<br />CONTACT US</a>
+          </div>
+          <div class="header_icon">
+            <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
+            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="loginHead">
-              <h3>會員登入 / 註冊</h3>
-            </div>
-            <div class="loginMain">
-              <input type="email" placeholder="請輸入註冊Email" size="50" />
-              <br />
-              <input type="password" placeholder="請輸入密碼" size="30" />
-              <br />
-              <button type="submit">登入</button>
-              <a href="signin.html"><button type="submit">註冊</button></a>
-            </div>
-            <hr class="divider" />
-            <div class="forgetPasswd">
-              <h3>忘記密碼</h3>
-              <input type="email" placeholder="請輸入註冊Email" size="50" />
-              <br />
-              <button type="submit">送出</button>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="loginHead">
+                <h3>會員登入 / 註冊</h3>
+              </div>
+              <div class="loginMain">
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <input type="password" placeholder="請輸入密碼" size="30" />
+                <br />
+                <button type="submit">登入</button>
+                <a href="signin.html"><button type="submit">註冊</button></a>
+              </div>
+              <hr class="divider" />
+              <div class="forgetPasswd">
+                <h3>忘記密碼</h3>
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <button type="submit">送出</button>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       <!-- Top Banner -->
       <div class="top_banner">
@@ -84,10 +86,7 @@
 
       <!-- intro -->
       <div class="intro">
-        <h3>
-          使用台灣梅子, 僅採用品質最好的「大果粒青梅」<br />
-          再手工進行一系列釀酒步驟
-        </h3>
+        <h3>使用台灣梅子, 僅採用品質最好的「大果粒青梅」釀造</h3>
       </div>
 
       <!-- product list 橫排 -->
@@ -460,7 +459,7 @@
     </script>
 
     <script>
-        // go back to top
+      // go back to top
       mybutton = document.getElementById("topBtn");
       window.onscroll = function () {
         scrollFunction();

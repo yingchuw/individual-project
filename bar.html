@@ -1,247 +1,285 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>梅屋 UMEYA</title>
-    <link rel="stylesheet" href="./css/newNavandFooter.css">
-    <link rel="stylesheet" href="./css/bar_style.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/newNavandFooter.css" />
+    <link rel="stylesheet" href="./css/bar_style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <!-- 新導覽列 -->
+      <!-- 新導覽列 -->
+      <div class="fixed">
         <nav class="header">
-            <div class="logo">
-                <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
-            </div>
-            <div class="menu" id="myTopnav">
-                <a href="about.html" class="active">關於梅屋<br>ABOUT US</a>
-                <a href="product.html">商品一覽<br>PRODUCTS</a>
-                <a href="bar.html">品梅吧<br>UME BAR</a>
-                <a href="store.html">梅屋商店<br>OUR STORE</a>
-                <a href="contact.html">聯絡我們<br>CONTACT US</a>
-            </div>
-            <div class="header_icon">
-                <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
-                <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-            </div>
+          <div class="logo">
+            <a href="index.html"><img src="./Logo/main logo.svg" alt="" /></a>
+          </div>
+          <div class="menu" id="myTopnav">
+            <a href="about.html" class="active">關於梅屋<br />ABOUT US</a>
+            <a href="product.html">商品一覽<br />PRODUCTS</a>
+            <a href="bar.html">品梅吧<br />UME BAR</a>
+            <a href="store.html">梅屋商店<br />OUR STORE</a>
+            <a href="contact.html">聯絡我們<br />CONTACT US</a>
+          </div>
+          <div class="header_icon">
+            <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
+            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="loginHead">
-                        <h3>會員登入 / 註冊</h3>
-                    </div>
-                    <div class="loginMain">
-                        <input type="email" placeholder="請輸入註冊Email" size="50">
-                        <br>
-                        <input type="password" placeholder="請輸入密碼" size="30">
-                        <br>
-                        <button type="submit">登入</button>
-                        <a href="signin.html"><button type="submit">註冊</button></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="forgetPasswd">
-                        <h3>忘記密碼</h3>
-                        <input type="email" placeholder="請輸入註冊Email" size="50">
-                        <br>
-                        <button type="submit">送出</button>
-                    </div>
-                </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="loginHead">
+                <h3>會員登入 / 註冊</h3>
+              </div>
+              <div class="loginMain">
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <input type="password" placeholder="請輸入密碼" size="30" />
+                <br />
+                <button type="submit">登入</button>
+                <a href="signin.html"><button type="submit">註冊</button></a>
+              </div>
+              <hr class="divider" />
+              <div class="forgetPasswd">
+                <h3>忘記密碼</h3>
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <button type="submit">送出</button>
+              </div>
             </div>
+          </div>
         </nav>
+      </div>
+      
+      <!-- Top Banner -->
+      <div class="top_banner">
+        <img class="barThe" src="./Bar/The.svg" alt="" />
+        <img class="barLogo" src="./Bar/UME BAR logo.svg" alt="" />
+      </div>
 
-        <!-- Top Banner -->
-        <div class="top_banner">
-            <img class="barThe" src="./Bar/The.svg" alt="">
-            <img class="barLogo" src="./Bar/UME BAR logo.svg" alt="">
-        </div>
+      <!-- intro -->
+      <div class="intro">
+        <h3>
+          攜手World Class調酒大賽調酒師<br />
+          想喝什麼都能幫您客製一杯專屬酒款
+        </h3>
+      </div>
 
-        <!-- intro -->
-        <div class="intro">
-            <h3>
-                攜手World Class調酒大賽調酒師<br>
-                想喝什麼都能幫您客製一杯專屬酒款
-            </h3>
-        </div>
+      <!-- world class vedio -->
+      <div class="embed-container">
+        <iframe
+          src="https://www.youtube.com/embed/-QEh1VzrxhA?rel=0&autoplay=1&loop=1&playlist=-QEh1VzrxhA"
+          frameborder="”0″"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-        <!-- world class vedio -->
-        <div class='embed-container'>
-            <iframe src='https://www.youtube.com/embed/-QEh1VzrxhA?rel=0&autoplay=1&loop=1&playlist=-QEh1VzrxhA'
-                frameborder=”0″ allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+      <!-- 調酒圖片輪播區 -->
+      <div class="cocktail">
+        <h3>梅屋精釀梅酒與琳琅滿目的酒品</h3>
+      </div>
 
-        <!-- 調酒圖片輪播區 -->
-        <div class="cocktail">
-            <h3>梅屋精釀梅酒與琳琅滿目的酒品</h3>
-        </div>
+      <div class="variable slider">
+        <div><img src="./Bar/cocktail/cocktail (3).png" alt="" /></div>
+        <div><img src="./Bar/cocktail/cocktail (4).png" alt="" /></div>
+        <div><img src="./Bar/cocktail/cocktail (5).png" alt="" /></div>
+        <div><img src="./Bar/cocktail/cocktail (6).png" alt="" /></div>
+        <div><img src="./Bar/cocktail/cocktail (7).png" alt="" /></div>
+        <div><img src="./Bar/cocktail/cocktail (8).png" alt="" /></div>
+      </div>
 
-        <div class="variable slider">
-            <div><img src="./Bar/cocktail/cocktail (3).png" alt=""></div>
-            <div><img src="./Bar/cocktail/cocktail (4).png" alt=""></div>
-            <div><img src="./Bar/cocktail/cocktail (5).png" alt=""></div>
-            <div><img src="./Bar/cocktail/cocktail (6).png" alt=""></div>
-            <div><img src="./Bar/cocktail/cocktail (7).png" alt=""></div>
-            <div><img src="./Bar/cocktail/cocktail (8).png" alt=""></div>
-        </div>
+      <!-- 地址位置圖 -->
+      <div class="baradd">
+        <h3>梅屋UME BAR 中山本店</h3>
+        <p>
+          地址：104台北市中山區中山北路三段777號<br /><br />
+          營業時間：14:00-01:00<br /><br />
+          詢問專線：02-2712-1234<br /><br />
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9683678171978!2d121.52094655017667!3d25.069061242961194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a94d8b9cff41%3A0xb270d742a043fa2a!2zMTA05Y-w5YyX5biC5Lit5bGx5Y2A5Lit5bGx5YyX6Lev5LiJ5q61!5e0!3m2!1szh-TW!2stw!4v1643618322272!5m2!1szh-TW!2stw"
+          width="1000"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
 
+      <!-- 酒後不開車聲明 -->
+      <div class="warning"></div>
 
-        <!-- 地址位置圖 -->
-        <div class="baradd">
-            <h3>梅屋UME BAR 中山本店</h3>
-            <p>地址：104台北市中山區中山北路三段777號<br><br>
-                營業時間：14:00-01:00<br><br>
-                詢問專線：02-2712-1234<br><br>
-            </p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9683678171978!2d121.52094655017667!3d25.069061242961194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a94d8b9cff41%3A0xb270d742a043fa2a!2zMTA05Y-w5YyX5biC5Lit5bGx5Y2A5Lit5bGx5YyX6Lev5LiJ5q61!5e0!3m2!1szh-TW!2stw!4v1643618322272!5m2!1szh-TW!2stw"
-                width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+      <!-- footer -->
+      <footer id="footer">
+        <ul class="footer_inner">
+          <p>
+            本網站為緯育TibaMe前端設計工程師TFD105班學員專題作品，僅供學習、展示之用。
+          </p>
+          <div class="footer_icon">
+            <li>
+              <a href="https://zh-tw.facebook.com" target="window name"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="window name2">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </div>
+        </ul>
+      </footer>
 
-        <!-- 酒後不開車聲明 -->
-        <div class="warning"></div>
-
-        <!-- footer -->
-        <footer id="footer">
-            <ul class="footer_inner">
-                <p>本網站為緯育TibaMe前端設計工程師TFD105班學員專題作品，僅供學習、展示之用。</p>
-                <div class="footer_icon">
-                    <li><a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/" target="window name2">
-                            <i class="fab fa-instagram"></i></a></li>
-                </div>
-            </ul>
-        </footer>
-
-        <!-- go to top btn -->
-        <div>
-            <button id="topBtn" onclick="topFunction()" title="Go to top">
-                <i class="fas fa-chevron-circle-up"></i>
-            </button>
-        </div>
+      <!-- go to top btn -->
+      <div>
+        <button id="topBtn" onclick="topFunction()" title="Go to top">
+          <i class="fas fa-chevron-circle-up"></i>
+        </button>
+      </div>
     </div>
 
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"
+    ></script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    ></script>
 
     <script>
-        $(document).on('ready', function () {
-            $(".variable").slick({
-                arrows: true,
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 4,
+      $(document).on("ready", function () {
+        $(".variable").slick({
+          arrows: true,
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          infinite: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
                 slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
                 infinite: true,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
+      });
     </script>
 
     <script>
-        // hamburger btn
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "menu") {
-                x.className += "responsive";
-            } else {
-                x.className = "menu";
-            }
+      // hamburger btn
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "menu") {
+          x.className += "responsive";
+        } else {
+          x.className = "menu";
         }
+      }
     </script>
 
     <!-- go back to top btn -->
     <script>
-        mybutton = document.getElementById("topBtn"); //Get the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
+      mybutton = document.getElementById("topBtn"); //Get the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 500 ||
+          document.documentElement.scrollTop > 500
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
         }
+      }
 
-        function topFunction() {
-            document.body.scrollTop = 0; // for safari
-            document.documentElement.scrollTop = 0; // for chrome
-        }
+      function topFunction() {
+        document.body.scrollTop = 0; // for safari
+        document.documentElement.scrollTop = 0; // for chrome
+      }
     </script>
 
     <script>
-        // modal box
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+      // modal box
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
 
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
 
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
+      };
     </script>
-
-</body>
-
+  </body>
 </html>

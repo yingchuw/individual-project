@@ -9,6 +9,7 @@
     height: calc(100vh - 140px);
 
     position: relative;
+    margin-top: var(--nav-height);
 }
 
 .top_banner .barThe{

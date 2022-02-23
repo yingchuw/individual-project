@@ -1,223 +1,246 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>梅屋 UMEYA</title>
-    <link rel="stylesheet" href="./css/newNavandFooter.css">
-    <link rel="stylesheet" href="./css/index_style.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/ham.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/newNavandFooter.css" />
+    <link rel="stylesheet" href="./css/index_style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/ham.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <!-- 新導覽列 -->
+      <!-- 新導覽列 -->
+      <div class="fixed">
         <nav class="header">
-            <div class="logo">
-                <a href="index.html"><img src="./Logo/main logo.svg" alt=""></a>
-            </div>
-            <div class="menu" id="myTopnav">
-                <a href="about.html" class="active">關於梅屋<br>ABOUT US</a>
-                <a href="product.html">商品一覽<br>PRODUCTS</a>
-                <a href="bar.html">品梅吧<br>UME BAR</a>
-                <a href="store.html">梅屋商店<br>OUR STORE</a>
-                <a href="contact.html">聯絡我們<br>CONTACT US</a>
-            </div>
-            <div class="header_icon">
-                <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
-                <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
-            </div>
+          <div class="logo">
+            <a href="index.html"><img src="./Logo/main logo.svg" alt="" /></a>
+          </div>
+          <div class="menu" id="myTopnav">
+            <a href="about.html" class="active">關於梅屋<br />ABOUT US</a>
+            <a href="product.html">商品一覽<br />PRODUCTS</a>
+            <a href="bar.html">品梅吧<br />UME BAR</a>
+            <a href="store.html">梅屋商店<br />OUR STORE</a>
+            <a href="contact.html">聯絡我們<br />CONTACT US</a>
+          </div>
+          <div class="header_icon">
+            <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
+            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-            
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="loginHead">
-                        <h3>會員登入 / 註冊</h3>
-                    </div>
-                    <div class="loginMain">
-                        <input type="email" placeholder="請輸入註冊Email" size="50">
-                        <br>
-                        <input type="password" placeholder="請輸入密碼" size="30">
-                        <br>
-                        <button type="submit">登入</button>
-                        <a href="signin.html"><button type="submit">註冊</button></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="forgetPasswd">
-                        <h3>忘記密碼</h3>
-                        <input type="email" placeholder="請輸入註冊Email" size="50">
-                        <br>
-                        <button type="submit">送出</button>
-                    </div>
-                </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="loginHead">
+                <h3>會員登入 / 註冊</h3>
+              </div>
+              <div class="loginMain">
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <input type="password" placeholder="請輸入密碼" size="30" />
+                <br />
+                <button type="submit">登入</button>
+                <a href="signin.html"><button type="submit">註冊</button></a>
+              </div>
+              <hr class="divider" />
+              <div class="forgetPasswd">
+                <h3>忘記密碼</h3>
+                <input type="email" placeholder="請輸入註冊Email" size="50" />
+                <br />
+                <button type="submit">送出</button>
+              </div>
             </div>
+          </div>
         </nav>
+      </div>
+      <!-- Top Banner -->
+      <div class="top_banner">
+        <img class="center_logo" src="./Logo/logo_white.svg" alt="" />
+      </div>
 
-        <!-- Top Banner -->
-        <div class="top_banner">
-            <img class="center_logo" src="./Logo/logo_white.svg" alt="">
+      <!-- About Us -->
+      <div class="index_about">
+        <img src="./index/index_about.jpg" alt="" />
+        <div class="index_about_text">
+          <h3>關於梅屋<br />About Us</h3>
+          <p>
+            使用台灣在地青梅釀造, <br /><br />
+            將驕傲的美味帶到每個台灣人與喜愛梅酒的人面前
+          </p>
+          <a href="about.html">View more</a>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="index_product">
+        <div class="index_product_title">
+          <h3>產品一覽<br />Products</h3>
         </div>
 
-        <!-- About Us -->
-        <div class="index_about">
-            <img src="./index/index_about.jpg" alt="">
-            <div class="index_about_text">
-                <h3>關於梅屋<br>About Us</h3>
-                <p>使用台灣在地青梅釀造, <br><br>
-                    將驕傲的美味帶到每個台灣人與喜愛梅酒的人面前</p>
-                <a href="about.html">View more</a>
-            </div>
+        <div class="indext_product_pic">
+          <ul class="index_product_list">
+            <li class="index_product_item">
+              <img
+                class="item1"
+                src="./Product/Product pic/product-2.png"
+                alt=""
+              />
+              <p>手工酒梅</p>
+            </li>
+            <li class="index_product_item">
+              <img src="./index/index product/2.png" alt="" />
+              <p>清酒梅酒</p>
+            </li>
+            <li class="index_product_item">
+              <img src="./index/index product/3.png" alt="" />
+              <p>威士忌梅酒</p>
+              <a class="productbtn_1" href="product.html">View more</a>
+            </li>
+            <li class="index_product_item">
+              <img src="./index/index product/4.png" alt="" />
+              <p>燒酌梅酒</p>
+            </li>
+            <li class="index_product_item">
+              <img src="./index/index product/5.png" alt="" />
+              <p>泡盛梅酒</p>
+              <a class="productbtn_2" href="product.html">View more</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- Products -->
-        <div class="index_product">
-            <div class="index_product_title">
-                <h3>產品一覽<br>Products</h3>
-            </div>
-
-            <div class="indext_product_pic">
-                <ul class="index_product_list">
-                    <li class="index_product_item">
-                        <img class="item1" src="./Product/Product pic/product-2.png" alt="">
-                        <p>手工酒梅</p>
-                    </li>
-                    <li class="index_product_item">
-                        <img src="./index/index product/2.png" alt="">
-                        <p>清酒梅酒</p>
-                    </li>
-                    <li class="index_product_item">
-                        <img src="./index/index product/3.png" alt="">
-                        <p>威士忌梅酒</p>
-                        <a class="productbtn_1" href="product.html">View more</a>
-                    </li>
-                    <li class="index_product_item">
-                        <img src="./index/index product/4.png" alt="">
-                        <p>燒酌梅酒</p>
-                    </li>
-                    <li class="index_product_item">
-                        <img src="./index/index product/5.png" alt="">
-                        <p>泡盛梅酒</p>
-                        <a class="productbtn_2" href="product.html">View more</a>
-                    </li>
-                </ul>
-            </div>
-
+      <!-- UME BAR-->
+      <div class="index_bar">
+        <div class="index_bar_text">
+          <h3>品梅吧<br />UME Bar</h3>
+          <p>
+            今晚我想來點不一樣的調酒...<br /><br />
+            來Ume Bar, 讓World Class調酒大師幫您特調一杯
+          </p>
+          <a href="bar.html">View more</a>
         </div>
+      </div>
 
-        <!-- UME BAR-->
-        <div class="index_bar">
-            <div class="index_bar_text">
-                <h3>品梅吧<br>UME Bar</h3>
-                <p>今晚我想來點不一樣的調酒...<br><br>
-                    來Ume Bar, 讓World Class調酒大師幫您特調一杯
-                </p>
-                <a href="bar.html">View more</a>
-            </div>
+      <!-- Store info -->
+      <div class="index_store">
+        <div class="index_store_text">
+          <h3>梅屋商店<br />Store</h3>
+          <p>
+            除了梅屋招牌手工梅酒, 梅屋商店還引進許多獨特梅酒與果實酒<br /><br />
+            梅屋期許藉由美味好酒，帶領更多人進入美好的果實酒世界
+          </p>
+          <a href="store.html">View more</a>
         </div>
+      </div>
 
-        <!-- Store info -->
-        <div class="index_store">
-            <div class="index_store_text">
-                <h3>梅屋商店<br>Store</h3>
-                <p>除了梅屋招牌手工梅酒, 梅屋商店還引進許多獨特梅酒與果實酒<br><br>
-                    梅屋期許藉由美味好酒，帶領更多人進入美好的果實酒世界
-                </p>
-                <a href="store.html">View more</a>
-            </div>
-        </div>
+      <!-- 酒後不開車聲明 -->
+      <div class="warning"></div>
 
-        <!-- 酒後不開車聲明 -->
-        <div class="warning"></div>
+      <!-- footer -->
+      <footer id="footer">
+        <ul class="footer_inner">
+          <p>
+            本網站為緯育TibaMe前端設計工程師TFD105班學員專題作品，僅供學習、展示之用。
+          </p>
+          <div class="footer_icon">
+            <a href="https://zh-tw.facebook.com" target="window name"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="window name2"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </ul>
+      </footer>
 
-        <!-- footer -->
-        <footer id="footer">
-            <ul class="footer_inner">
-                <p>本網站為緯育TibaMe前端設計工程師TFD105班學員專題作品，僅供學習、展示之用。</p>
-                <div class="footer_icon">
-                    <a href="https://zh-tw.facebook.com" target="window name"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/" target="window name2"><i class="fab fa-instagram"></i></a>
-                </div>
-            </ul>
-        </footer>
-
-        <!-- go to top btn -->
-        <div>
-            <button id="topBtn" onclick="topFunction()" title="Go to top">
-                <i class="fas fa-chevron-circle-up"></i>
-            </button>
-        </div>
+      <!-- go to top btn -->
+      <div>
+        <button id="topBtn" onclick="topFunction()" title="Go to top">
+          <i class="fas fa-chevron-circle-up"></i>
+        </button>
+      </div>
     </div>
 
     <script>
-        // hamburger btn
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "menu") {
-                x.className += "responsive";
-            } else {
-                x.className = "menu";
-            }
+      // hamburger btn
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "menu") {
+          x.className += "responsive";
+        } else {
+          x.className = "menu";
         }
+      }
     </script>
 
     <script>
-        // go back to top btn
-        mybutton = document.getElementById("topBtn"); //Get the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
+      // go back to top btn
+      mybutton = document.getElementById("topBtn"); //Get the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 500 ||
+          document.documentElement.scrollTop > 500
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
         }
+      }
 
-        function topFunction() {
-            document.body.scrollTop = 0; // for safari
-            document.documentElement.scrollTop = 0; // for chrome
-        }
+      function topFunction() {
+        document.body.scrollTop = 0; // for safari
+        document.documentElement.scrollTop = 0; // for chrome
+      }
     </script>
 
     <script>
-        // modal box
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+      // modal box
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
 
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
 
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
+      };
     </script>
-
-</body>
-
+  </body>
 </html>

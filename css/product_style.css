@@ -1,276 +1,310 @@
 /* ------------------ top_banner -------------------*/
-.top_banner{
-    background-image: url(../Product/product_banner_new.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+.top_banner {
+  background-image: url(../Product/product_banner_new.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vh - 140px);
+
+  position: relative;
+  margin-top: var(--nav-height);
+}
+
+.top_banner h2 {
+  color: #1c1c1c;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+  .top_banner {
+    top: calc(100% - var(--nav-height));
     width: 100%;
-    height: calc(100vh - 140px);
-
-    position: relative;
-}
-
-.top_banner h2{
-    color: #1C1C1C;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media (max-width: 991px){
-    .top_banner{
-        top: calc(100% - var(--nav-height));
-        width: 100%;
-    }
+  }
 }
 
 /* ------------------ intro -------------------*/
-.intro h3{
-    text-align: center;
-    margin: 20px 0 20px 0;
+.intro h3 {
+  text-align: center;
+  margin: 20px 0 20px 0;
 }
 
 /* ------------------ product list 橫排 -------------------*/
 
-.productList{
-    margin-top: 30px;
+.productList {
+  margin-top: 30px;
 }
 
-.productListInner{
-    width: 100%;
+.productListInner {
+  width: 100%;
 }
 
-.productList ul{
-    overflow: hidden;
-    display: table;
-    /* display: flex; */
-    margin: 0 auto;
-    width: 100%;
+.productList ul {
+  overflow: hidden;
+  display: table;
+  /* display: flex; */
+  margin: 0 auto;
+  width: 100%;
 }
 
-@media (max-width: 767.98px){
-    .productList ul{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-}
-
-.productList ul li{
-    display: table-cell;
-    text-align: center;
-    vertical-align: bottom;
-    line-height: 1.5;
-}
-
-.productList ul li:hover p{
-    color: #BF5B04;
-}
-
-.productTitle{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.productList ul li a{
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    padding-bottom: 30px;
-    position: relative;
-}
-
-.productList ul li a img{
-    width: 82px; 
-}
-
-/* ------------------ product list -------------------*/
-
-.mainProduct{
-    padding: 50px 50px 0 50px;
-}
-
-.mainProduct .item{
+@media (max-width: 767.98px) {
+  .productList ul {
     display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: calc(100% - 200px);
-    margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
-@media (max-width: 991px){
-    div.mainProduct {
-        width: 100%;
-    }
-    div.mainProduct .item{
-        width: 100%;
-    }
+.productList ul li {
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 1.5;
 }
 
-.item .itemInnerPic{
-    width: 475px;
-    text-align:center;
+.productList ul li:hover p {
+  color: #bf5b04;
 }
 
-.item .itemInnerText{
-    width: 470px;
+.productTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.item .itemInnerText h3{
-    padding: 20px 20px 20px 5px;
+.productList ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding-bottom: 30px;
+  position: relative;
 }
 
-.item .itemInnerText p{
-    padding: 5px;
+.productList ul li a img {
+  width: 82px;
 }
 
-.itemInnerText table tr{
-    display: table-row;
+/* --------------- product list 直排 ----------------*/
+
+.mainProduct {
+  padding: 50px 50px 0 50px;
 }
 
-.itemInnerText table tr th{
-    padding: 5px;
-    text-align: left;
-    width: 100px;
+.mainProduct .item {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: calc(100% - 200px);
+  margin: 0 auto;
 }
 
-.itemInnerTextWarning{
-    color: #fd171a;
-    margin-top: 16px;
-    font-weight: bold;
+@media (max-width: 991px) {
+  div.mainProduct {
+    width: 100%;
+  }
+  div.mainProduct .item {
+    width: 100%;
+  }
 }
 
-.itemInnerPic > .ume{
-    height: 300px;
-    margin-top: 50px;
+.item .itemInnerPic {
+  width: 475px;
+  text-align: center;
 }
 
-.itemInnerPic > .sakeume{
-    height: 400px;
-    padding-top: 50px;
+.item .itemInnerText {
+  width: 470px;
 }
 
-.itemInnerPic > .whiskyume{
-    height: 400px;
-    padding-top: 50px;
+.item .itemInnerText h3 {
+  padding: 20px 20px 20px 5px;
 }
 
-.itemInnerPic > .shoume{
-    height: 300px;
-    margin-top: 50px;
+.item .itemInnerText p {
+  padding: 5px;
 }
 
-.itemInnerPic > .awamoriume{
-    height: 300px;
-    margin-top: 50px;
+.itemInnerText table tr {
+  display: table-row;
 }
 
-@media (max-width: 767.98px){
+.itemInnerText table tr th {
+  padding: 5px;
+  text-align: left;
+  width: 100px;
+}
+
+.itemInnerTextWarning {
+  color: #fd171a;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.itemInnerPic > .ume {
+  height: 300px;
+  margin-top: 50px;
+}
+
+.itemInnerPic > .sakeume {
+  height: 400px;
+  padding-top: 50px;
+}
+
+.itemInnerPic > .whiskyume {
+  height: 400px;
+  padding-top: 50px;
+}
+
+.itemInnerPic > .shoume {
+  height: 300px;
+  margin-top: 50px;
+}
+
+.itemInnerPic > .awamoriume {
+  height: 300px;
+  margin-top: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .item .itemInnerPic {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .itemInnerPic > .ume {
+    height: 200px;
+    margin-top: 100px;
+  }
+
+  .itemInnerPic > .sakeume {
+    height: 350px;
+    padding-top: 100px;
+  }
+
+  .itemInnerPic > .whiskyume {
+    height: 350px;
+    padding-top: 100px;
+  }
+
+  .itemInnerPic > .shoume {
+    height: 200px;
+    margin-top: 100px;
+  }
+
+  .itemInnerPic > .awamoriume {
+    height: 200px;
+    margin-top: 100px;
+  }
+}
+
+/* @media (min-width:320px) and (max-width: 767.98px){
     .item .itemInnerPic{
-        width: 50%;
+        width: 30%;
         padding-right: 20px;
     }
+} */
+
+.addToList {
+  padding: 5px;
 }
 
-.addToList{
-    padding: 5px;
-}
-.addToList a{
-    display: block;
-    height: 40px;
-    width: 150px;
-    background-color:#1C1C1C;
-    color: whitesmoke;
-    text-align: center;
-    line-height: 40px;
-    margin-top: 20px;
+.addToList a {
+  display: block;
+  height: 40px;
+  width: 150px;
+  background-color: #1c1c1c;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
 }
 
-.addToList a:hover{
-    background-color:#BF5B04;
+.addToList a:hover {
+  background-color: #bf5b04;
 }
 
-.goBackList{
-    overflow: hidden;
-    margin: 0 auto;
-    /* padding: 10px; */
-    /* border-bottom: 2px dashed #A6C609; */
+.goBackList {
+  overflow: hidden;
+  margin: 0 auto;
+  /* padding: 10px; */
+  /* border-bottom: 2px dashed #A6C609; */
 }
 
-.goBackList a{
-    float: right;
+.goBackList a {
+  float: right;
 }
 
-.goBackList img{
-    width: 45px;
-    height: 30px;
+.goBackList img {
+  width: 45px;
+  height: 30px;
 }
 
-@media (max-width: 991px){
-    .goBackList{
-        width: 100%;;
-    }
+@media (max-width: 991px) {
+  .goBackList {
+    width: 100%;
+  }
 }
 /* ------------------ 推薦喝法 -------------------*/
-.recommand{
-    text-align: center;
-    width: 100%;
+.recommand {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.recommandInner {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .recommandInner {
+    display: block;
     margin: 0 auto;
-    margin-top: 20px;
-}
-
-.recommandInner{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 20px 100px;
     width: 100%;
-    margin: 0 auto;
+  }
+
+  .recommandContent div {
+    width: 100%;
+  }
 }
 
-@media (max-width: 991px){
-    .recommandInner{
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .recommandContent div{
-        width: 100%;
-    }
+.recommandInner img {
+  width: 75px;
+  margin: 30px;
 }
 
-.recommandInner img{
-    width: 75px;
-    margin: 30px;
+.recommand1 img {
+  margin-top: 50px;
 }
 
-.recommand1 img{
-    margin-top: 50px;
+.recommand3 img {
+  margin-top: 50px;
 }
 
-.recommand3 img{
-    margin-top: 50px;
+.recommand2 {
+  border-left: 2px dashed #a6c609;
+  border-right: 2px dashed #a6c609;
 }
 
-.recommand2{
-    border-left: 2px dashed #A6C609;
-    border-right: 2px dashed #A6C609;
+@media (max-width: 991px) {
+  .recommand2 {
+    border: none;
+  }
+}
+.recommandTitle {
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 991px){
-    .recommand2{
-        border: none;
-    }
-}
-.recommandTitle{
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.recommandText{
-    padding: 20px;
+.recommandText {
+  padding: 20px;
 }
