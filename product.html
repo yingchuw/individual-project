@@ -80,32 +80,62 @@
 
           <!-- list cart -->
           <div class="listCart">
-            <div class="list-item">
+            <div class="list-row-title">
+              <span>產品圖</span>
+              <span>品名</span>
+              <span>數量</span>
+            </div>
+
+            <div class="list-row">
               <img
                 src="./Product/Product pic/product-2.png"
                 id="item-img"
                 alt=""
               />
               <div class="list-text">
-                <p id="list-item-title">
-                  <span>品名</span>
-                  <span id="list-item-name" class="list-item-name"
-                    >手工醉梅</span
-                  >
-                </p>
+                <p id="list-item-name" class="list-item-name">手工醉梅</p>
               </div>
-              <a href="#" id="list-item-remove" class="list-item-remove">
-                <i class="far fa-trash-alt"></i>
-              </a>
+              <div class="list-qty">
+                <input class="cart-qty-input" type="number" value="2" />
+                <button class="list-item-remove">移除</button>
+              </div>
+            </div>
+
+            <div class="list-row">
+              <img
+                src="./Product/Product pic/product-2.png"
+                id="item-img"
+                alt=""
+              />
+              <div class="list-text">
+                <p id="list-item-name" class="list-item-name">手工醉梅</p>
+              </div>
+              <div class="list-qty">
+                <input class="cart-qty-input" type="number" value="2" />
+                <button class="list-item-remove">移除</button>
+              </div>
             </div>
 
             <hr />
 
-            <div>
-              <input type="submit" name="sendBt" value="送出詢問單" class="sendBtn">
-              <!-- <button class="sendBtn" type="submit">送出詢問單</button> -->
-              <button class="keepBtn" type="button"><a href="product.html">繼續瀏覽</a></button>
+            <div class="list-row-total">
+              <strong class="list-total-title">Total</strong>
+              <span class="list-total-qty">2</span>
             </div>
+            
+            <div class="send-Btn">
+              <input
+                type="submit"
+                name="sendBtn"
+                value="送出詢問單"
+                class="sendBtn"
+              />
+              <!-- <button class="sendBtn" type="submit">送出詢問單</button> -->
+              <button class="keepBtn" type="button">
+                <a href="product.html">繼續瀏覽</a>
+              </button>
+            </div>
+
           </div>
         </nav>
       </div>
@@ -198,12 +228,9 @@
             <p class="itemInnerTextWarning">
               本商品不開放網路銷售，如欲洽詢或購買，請加入詢問清單
             </p>
-            <div class="addToList" id="add_btn">
-              <a href="#">加入清單</a>
-            </div>
-            <!-- <div class="goBackList">
-                        <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div> -->
+            <button class="btn btn-primary shop-item-btn">
+              加入清單
+            </button>
           </div>
         </div>
       </div>
@@ -249,12 +276,9 @@
             <p class="itemInnerTextWarning">
               本商品不開放網路銷售，如欲洽詢或購買，請加入詢問清單
             </p>
-            <div class="addToList" id="add_btn">
-              <a href="#">加入清單</a>
-            </div>
-            <!-- <div class="goBackList">
-                        <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div> -->
+            <button class="btn btn-primary shop-item-btn">
+              加入清單
+            </button>
           </div>
         </div>
       </div>
@@ -300,12 +324,9 @@
             <p class="itemInnerTextWarning">
               本商品不開放網路銷售，如欲洽詢或購買，請加入詢問清單
             </p>
-            <div class="addToList" id="add_btn">
-              <a href="#">加入清單</a>
-            </div>
-            <!-- <div class="goBackList">
-                        <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div> -->
+            <button class="btn btn-primary shop-item-btn">
+              加入清單
+            </button>
           </div>
         </div>
       </div>
@@ -349,12 +370,9 @@
             <p class="itemInnerTextWarning">
               本商品不開放網路銷售，如欲洽詢或購買，請加入詢問清單
             </p>
-            <div class="addToList" id="add_btn">
-              <a href="#">加入清單</a>
-            </div>
-            <!-- <div class="goBackList">
-                        <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div> -->
+            <button class="btn btn-primary shop-item-btn">
+              加入清單
+            </button>
           </div>
         </div>
       </div>
@@ -400,13 +418,9 @@
             <p class="itemInnerTextWarning">
               本商品不開放網路銷售，如欲洽詢或購買，請加入詢問清單
             </p>
-            <div class="addToList" id="add_btn">
-              <a href="#">加入清單</a>
-            </div>
-            <!-- <div class="goBackList">
-                        <a href="#"><img src="./Product/goUp.svg" alt=""></a>
-                    </div> -->
-          </div>
+            <button class="btn btn-primary shop-item-btn">
+              加入清單
+            </button>
         </div>
       </div>
 
@@ -552,5 +566,6 @@
         });
       }
     </script>
+    <script src="./listcart.js" async></script>
   </body>
 </html>

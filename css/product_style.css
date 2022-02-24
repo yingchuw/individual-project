@@ -2,8 +2,7 @@
 .listCart{
   position: absolute;
   /* top: 80px; */
-  /* min-height: 10rem; */
-  width: 300px;
+  min-width: 320px;
   background: whitesmoke;
   top: var(--nav-height);
   right: 0;
@@ -11,28 +10,46 @@
   background: rgba(255, 255, 255, 0.5);
   /* width: 0; */
   overflow: hidden;
+  background-color: whitesmoke;
+  /* display: none; */
 }
 
 .show-listCart{
   width: 18rem;
   padding: 2rem 1.5rem;
   transform: rotateY(-360deg);
+  height: fit-content;
 }
 
-.listCart .list-item{
+.listCart .list-row-title{
+  padding: 10px;
+  
+}
+
+.listCart .list-row-title span{
+  margin-right: 40px;
+  text-align: left;
+}
+
+.listCart .list-row{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transition: all 1s ease-in-out;
+  padding: 10px;
+  /* transition: all 1s ease-in-out; */
   /* position:absolute; */
   /* top: var(--nav-height); */
 }
 
-.listCart .list-item img{
+.listCart .list-row img{
   height: 100px;
 }
 
-.listCart .list-item-remove{
+.listCart .list-qty .cart-qty-input{
+  width: 40px;
+}
+
+.listCart .list-row-remove{
   color: #1c1c1c;
   transition: all 1s ease-in-out;
 }
@@ -40,6 +57,18 @@
 .listCart .list-item-remove:hover{
   transform: scale(1.1);
   color: #fd171a;
+} 
+
+.list-row-total{
+  padding: 10px;
+}
+
+.send-Btn {
+  padding: 10px;
+}
+
+.send-Btn input{
+  cursor: pointer;
 }
 
 /* ------------------ top_banner -------------------*/
@@ -252,22 +281,20 @@
     }
 } */
 
-.addToList {
-  padding: 5px;
+.shop-item-btn {
+  
 }
 
-.addToList a {
-  display: block;
-  height: 40px;
+.shop-item-btn{
   width: 150px;
   background-color: #1c1c1c;
+  border-radius: 3px;
   color: whitesmoke;
-  text-align: center;
-  line-height: 40px;
   margin-top: 20px;
+  padding: 10px;
 }
 
-.addToList a:hover {
+.shop-item-btn:hover {
   background-color: #bf5b04;
 }
 
