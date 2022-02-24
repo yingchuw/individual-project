@@ -11,21 +11,35 @@
   background: rgba(255, 255, 255, 0.5);
   /* width: 0; */
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
 
+.show-listCart{
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
 }
 
 .listCart .list-item{
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s ease-in-out;
   /* position:absolute; */
   /* top: var(--nav-height); */
 }
 
 .listCart .list-item img{
   height: 100px;
+}
+
+.listCart .list-item-remove{
+  color: #1c1c1c;
+  transition: all 1s ease-in-out;
+}
+
+.listCart .list-item-remove:hover{
+  transform: scale(1.1);
+  color: #fd171a;
 }
 
 /* ------------------ top_banner -------------------*/
