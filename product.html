@@ -45,7 +45,7 @@
           </div>
           <div class="header_icon">
             <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
-            <a href="list.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
             <span>0</span>
           </div>
 
@@ -80,6 +80,7 @@
 
           <!-- list cart -->
           <div class="listCart">
+            <span class="close">&times;</span>
             <div class="list-row-title">
               <span>產品圖</span>
               <span>品名</span>
@@ -565,6 +566,27 @@
           behavior: "smooth",
         });
       }
+    </script>
+
+    <script>
+      // list cart btn
+      var cartList = document.getElementsByClassName('listCart')
+      var button = document.getElementsByClassName("fas fa-shopping-cart")
+      var span = document.getElementsByClassName("close")[0];
+
+      button.onclick = function () {
+        cartList.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == cartList) {
+          cartList.style.display = "none";
+        }
+      };
     </script>
     <script src="./listcart.js" async></script>
   </body>
