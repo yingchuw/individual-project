@@ -164,7 +164,54 @@
 }
 
 /* --------------- product list 直排 ----------------*/
+.itemContainer{
+  margin: 0 auto;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+}
 
+#mainProduct {
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemContainer img{
+  /* height: 250px; */
+  width: 130px;
+  display: block;
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.itemContainer .itemInnerText{
+  width: 450px;
+}
+
+.itemContainer .itemInnerText p{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.itemContainer .itemInnerText .itemSpec table{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.itemContainer .itemInnerText .itemSpec th{
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.itemInnerTextWarning{
+  color: #fd171a;
+}
+
+/*  
 .mainProduct {
   padding: 50px 50px 0 50px;
 }
@@ -276,12 +323,12 @@
   }
 }
 
+*/
 .shop-item-btn{
   width: 150px;
   background-color: #1c1c1c;
   border-radius: 3px;
   color: whitesmoke;
-  margin-top: 20px;
   padding: 10px;
 }
 
