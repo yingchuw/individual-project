@@ -4,6 +4,7 @@
   top: var(--nav-height);
   right: 0;
   min-width: 320px;
+  height: fit-content;
   background: whitesmoke;
   transition: all .3s ease-in-out;
   /* width: 0; */
@@ -60,7 +61,10 @@
 }
 
 .send-Btn {
-  padding: 10px;
+  margin: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #1c1c1c;
+  position: sticky;
 }
 
 .send-Btn input{
@@ -345,6 +349,7 @@
   border-radius: 3px;
   color: whitesmoke;
   padding: 10px;
+  cursor: pointer;
 }
 
 .shop-item-btn:hover {

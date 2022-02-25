@@ -39,8 +39,19 @@ function ready(){
         var button = addToCartBtn[i]
         button.addEventListener('click', addToCartCliked)
     }
+
+    document.getElementsByClassName('send-Btn')[0].addEventListener('click', purchaseClicked)
+
 }
 
+function purchaseClicked(){
+    alert('感謝您的詢問, 客服人員將盡快與您聯繫')
+    var cartItems = document.getElementsByClassName('list-row')[0]
+    while (cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
 
 function removeCartItem(event){
     var buttonclicked = event.target
@@ -58,19 +69,45 @@ function qtyChanged(event){
 
 function addToCartCliked(event){
     var button = event.target
-    var item = button.parentElement.parentElement
-    var title = item.getElementsByClassName('itemInnerText')[0].innerText
-    var imgsrc = item.getElementsByClassName('itemInnerPic')[0].src
-
-    console.log(title, imgsrc)
-    addItemToCart(title, imgsrc)
+    var item = button.parentElement.parentElement.parentElement
+    var title = item.getElementsByClassName('itemTitle')[0].innerText
+    var img = item.getElementsByClassName('itemImg')[0].src
+    addItemToCart(title, img)
+    updateCartTotal()
 }
 
-function addItemToCart(title, imgsrc){
+function addItemToCart(title, img){
     var cartRow = document.createElement('div')
-    cartRow.innerText = title
-    var cartItem = document.getElementsByClassName('listCart')[0]
-    cartItem.appendChild(cartRow)
+    cartRow.classList.add('list-row')
+    // cartRow.innerText = title
+    var cartItems = document.getElementsByClassName('listCart')[0]
+    var cartItemNames = document.getElementsByClassName('list-item-name')
+    for (var i = 0; i < cartItemNames.length; i++){
+        if (cartItemNames[i].innerText == title){
+            alert('已加入清單')
+            return
+        }
+    }
+    var cartRowContents = `
+    <div class="cart-Item">
+        <img
+        src="${img}"
+        id="item-img"
+        alt=""
+        />
+    </div>
+    <div class="list-text">
+        <p id="list-item-name" class="list-item-name">${title}</p>
+    </div>
+    <div class="list-qty">
+        <input class="cart-qty-input" type="number" value="1" />
+        <button class="list-item-remove">移除</button>
+    </div>
+    `
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('list-item-remove')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-qty-input')[0].addEventListener('change', qtyChanged)
 }   
 
 function updateCartTotal(){
@@ -87,3 +124,4 @@ function updateCartTotal(){
     total = Math.round(total * 100) / 100
     document.getElementsByClassName("list-total-qty")[0].innerText = total
 }
+
