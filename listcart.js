@@ -20,8 +20,6 @@ listClose.onclick = function () {
   };
 
 
-
-  
 function ready(){
     var remove_btn = document.getElementsByClassName("list-item-remove");
     // console.log(remove_btn);
