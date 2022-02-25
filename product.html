@@ -45,7 +45,7 @@
           </div>
           <div class="header_icon">
             <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a id="listBtn" href="#"><i class="fas fa-shopping-cart"></i></a>
             <span>0</span>
           </div>
 
@@ -53,7 +53,7 @@
             <i class="fa fa-bars"></i>
           </a>
 
-          <!-- The Modal logoin -->
+          <!-- The Modal login -->
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
@@ -79,8 +79,8 @@
           </div>
 
           <!-- list cart -->
-          <div class="listCart">
-            <span class="close">&times;</span>
+          <div id="theCart" class="listCart">
+            <span class="listClose">&times;</span>
             <div class="list-row-title">
               <span>產品圖</span>
               <span>品名</span>
@@ -549,7 +549,7 @@
     </script>
 
     <script>
-      // fas fa-angle-double-down
+      // product list 橫排 產品箭頭往下功能 
       const links = document.querySelectorAll(".productList ul a");
 
       for (const link of links) {
@@ -568,26 +568,7 @@
       }
     </script>
 
-    <script>
-      // list cart btn
-      var cartList = document.getElementsByClassName('listCart')
-      var button = document.getElementsByClassName("fas fa-shopping-cart")
-      var span = document.getElementsByClassName("close")[0];
-
-      button.onclick = function () {
-        cartList.style.display = "block";
-      };
-
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      window.onclick = function (event) {
-        if (event.target == cartList) {
-          cartList.style.display = "none";
-        }
-      };
-    </script>
+    <script src="./project.js"></script>
     <script src="./listcart.js" async></script>
   </body>
 </html>

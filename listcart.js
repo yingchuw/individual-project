@@ -4,6 +4,24 @@ if (document.readyState == 'loading'){
     ready()
 }
 
+
+// list cart btn
+var theCart = document.getElementById('theCart')
+var listBtn = document.getElementById('listBtn')
+var listClose = document.getElementsByClassName('listClose')[0]
+// console.log(theCart, listBtn, listClose)
+
+listBtn.onclick = function (){
+    theCart.style.display = 'block';
+}
+
+listClose.onclick = function () {
+    theCart.style.display = 'none';
+  };
+
+
+
+  
 function ready(){
     var remove_btn = document.getElementsByClassName("list-item-remove");
     // console.log(remove_btn);
