@@ -9,7 +9,6 @@ if (document.readyState == 'loading'){
 var theCart = document.getElementById('theCart')
 var listBtn = document.getElementById('listBtn')
 var listClose = document.getElementsByClassName('listClose')[0]
-// console.log(theCart, listBtn, listClose)
 
 listBtn.onclick = function (){
     theCart.style.display = 'block';
@@ -69,14 +68,15 @@ function qtyChanged(event){
 
 function addToCartCliked(event){
     var button = event.target
-    var item = button.parentElement.parentElement.parentElement
+    var item = button.parentElement.parentElement
     var title = item.getElementsByClassName('itemTitle')[0].innerText
-    var img = item.getElementsByClassName('itemImg')[0].src
-    addItemToCart(title, img)
+    var itemImg = item.getElementsByClassName('itemImg')[0].src
+
+    addItemToCart(title, itemImg)
     updateCartTotal()
 }
 
-function addItemToCart(title, img){
+function addItemToCart(title, itemImg){
     var cartRow = document.createElement('div')
     cartRow.classList.add('list-row')
     // cartRow.innerText = title
@@ -121,7 +121,7 @@ function updateCartTotal(){
         total = total + qty
 
     }
-    total = Math.round(total * 100) / 100
+    // total = Math.round(total * 100) / 100
     document.getElementsByClassName("list-total-qty")[0].innerText = total
 }
 
