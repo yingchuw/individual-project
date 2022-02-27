@@ -46,7 +46,7 @@
           <div class="header_icon">
             <a id="myBtn" href="#"><i class="fas fa-user"></i></a>
             <a id="listBtn" href="#"><i class="fas fa-shopping-cart"></i></a>
-            <span>0</span>
+            <span id="listBtnQty">0</span>
           </div>
 
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -82,33 +82,16 @@
           <div id="theCart" class="listCart">
             <span class="listClose">&times;</span>
             <div class="list-row-title">
-              <span>產品圖</span>
+              <!-- <span>產品圖</span> -->
               <span>品名</span>
               <span>數量</span>
             </div>
 
             <div class="list-row">
-              <div class="cart-Item">
+              <!-- <div class="cart-Item">
                 <img
                 src="./Product/Product pic/product-2.png"
-                class="item-img"
-                alt=""
-                />
-              </div>
-              <div class="list-text">
-                <p id="list-item-name" class="list-item-name">手工醉梅</p>
-              </div>
-              <div class="list-qty">
-                <input class="cart-qty-input" type="number" value="1" />
-                <button class="list-item-remove">移除</button>
-              </div>
-            </div>
-
-            <!-- <div class="list-row">
-              <div class="cart-Item">
-                <img
-                src="./Product/Product pic/product-2.png"
-                class="item-img"
+                id="item-img"
                 alt=""
               />
               </div>
@@ -118,14 +101,22 @@
               <div class="list-qty">
                 <input class="cart-qty-input" type="number" value="1" />
                 <button class="list-item-remove">移除</button>
-              </div>
-            </div> -->
+              </div> -->
+            </div>
 
-            <!-- <div class="list-row-total">
-              <strong class="list-total-title">Total</strong>
-              <span class="list-total-qty">2</span>
-            </div> -->
-
+            <div class="checkAge">
+              <label class="agreeAge" for="">
+                  <input type="checkbox" name="iagree" value="1" id="agree">
+                  <span>我已年滿18歲</span>
+              </label>
+            </div>
+      
+            <div class="claim">
+              <p>
+                  本網站並非線上交易型網站，所列商品及其相關資訊均僅供介紹參考之用，公司客服人員會儘速與您連絡。 所有交易細節請均以我們服務人員與您確認訂單當時的內容與說明為準，如有造成不便及困擾之處，敬請見諒。
+              </p>
+            </div>
+  
             <div class="send-Btn">
               <input
                 type="submit"
@@ -133,12 +124,13 @@
                 value="送出詢問單"
                 class="sendBtn"
               />
-              <!-- <button class="sendBtn" type="submit">送出詢問單</button> -->
-              <button class="keepBtn" type="button">
-                <a href="product.html">繼續瀏覽</a>
-              </button>
             </div>
-          </div>
+
+            <!-- <div class="list-row-total">
+              <strong class="list-total-title">Total</strong>
+              <span class="list-total-qty">2</span>
+            </div> -->
+          </div>          
         </nav>
       </div>
 
@@ -197,7 +189,7 @@
       <div class="itemContainer">
         <div class="ume1" id="mainProduct">
           <img
-            id="itemImg"
+            class="itemImg"
             src="./Product/Product pic/product-2.png"
             alt="ume"
           />
@@ -239,7 +231,7 @@
         <!-- product list 清酒梅酒 -->
         <div class="ume2" id="mainProduct">
           <img
-            id="itemImg"
+            class="itemImg"
             src="./Product/Product pic/product-1 (2).png"
             alt="sakeume"
           />
@@ -547,6 +539,7 @@
     </script>
 
     <!-- <script src="./project.js"></script> -->
-    <script src="./listcart.js" async></script>
+    <!-- <script src="./listcart.js" async ></script> -->
+    <script src="./cart.js"></script>
   </body>
 </html>
