@@ -14,7 +14,7 @@
    border-bottom: 1px solid #1C1C1C;
 }
 
-@media screen and (max-width: 991.98px) {
+/* @media screen and (max-width: 991.98px) {
     .listContent{
         width: 100%;
     }
@@ -66,7 +66,54 @@
 .listItem .listNum{
     height: 40px;
     width: 40px;
+} */
+
+.productsInList{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.listContent .product-header{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.productsInList .products {
+    width: 200%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.productsInList .quantity{
+    width: 100%;
+    text-align: center;
+}
+
+.productsInList .total{
+    width: 100%;
+    text-align: center;
+}
+
+.productsInList .products ion-icon{
+    font-size: 32px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.productsInList .products img{  
+    display: block;
+    height: 100px;
+    margin: 0 50px;
+}
+
+.productsInList .products span{
+    width: 100%;
+    text-align: center;
+}
+
 
 /* ------------------ list form -------------------*/
 .listForm{
@@ -136,4 +183,17 @@
     .listBtn{
         width: 100%;
     }
+}
+
+/* ------------------ button -------------------*/
+.product-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-header p{
+    width: 25%;
+    text-align: center;
 }
