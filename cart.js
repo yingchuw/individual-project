@@ -1,27 +1,27 @@
 let carts = document.querySelectorAll('.shop-item-btn')
 let products = [
     {
-        name: "手工醉梅",
+        name: "Ume",
         tag:"ume", 
         inCart: 0
     },
     {
-        name: "清酒梅酒",
+        name: "Sakeume",
         tag:"sakeume",
         inCart: 0 
     },
     {
-        name: "威士忌梅酒",
+        name: "Whiskyume",
         tag:"whiskyume",
         inCart: 0 
     },
     {
-        name: "燒酌梅酒",
+        name: "Shoume",
         tag:"shoume",
         inCart: 0 
     },
     {
-        name: "泡盛梅酒",
+        name: "Awamoriume",
         tag:"awamoriume",
         inCart: 0 
     }
@@ -98,7 +98,7 @@ function displayCart(){
     cartItems = JSON.parse(cartItems);
     
     let listContent = document.querySelector(".products");
-    console.log(cartItems);
+    // console.log(cartItems);
 
     if (cartItems && listContent){
         listContent.innerHTML = '';
@@ -111,9 +111,9 @@ function displayCart(){
                 <span>${item.name}</span>
             </div>
             <div class="quantity">
-                <ion-icon name="caret-back-circle-outline"></ion-icon>
+                <ion-icon class="decrease" name="caret-back-circle-outline"></ion-icon>
                 <span>${item.inCart}</span>
-                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                <ion-icon class="increase" name="caret-forward-circle-outline"></ion-icon>
             </div>
             <div class="total">
                 ${item.inCart}pcs
@@ -122,20 +122,63 @@ function displayCart(){
             `;
         });
 
-        listContent.innerHTML += `
-            <div class="basketTotalContainer">
-                <h3 class="basketTotalTitle">
-                Total
-                </h3>
-                <h3 class="basketTotal">
-                ${inCart}
-                </h3>
-            </div>
-        `
+        // listContent.innerHTML += `
+        //     <div class="basketTotalContainer">
+        //         <h3 class="basketTotalTitle">
+        //         Total
+        //         </h3>
+        //         <h3 class="basketTotal">
+        //         ${inCart}
+        //         </h3>
+        //     </div>
+        // `;
         }
 
-
+        deleteButton();
+        manageQuantity();
     }
+
+function deleteButton (){
+    let deleteButton = document.querySelectorAll(".productsInList .products ion-icon");
+    let productsName;
+    let productsNumber = localStorage.getItem('cartNumbers');
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+    // console.log(cartItems);
+
+    for (let i = 0; i < deleteButton.length; i++){
+        deleteButton[i].addEventListener("click", () => {
+            productsName = deleteButton[i].parentElement.textContent.trim().toLowerCase();
+            console.log(productsName);
+            console.log(cartItems[productsName]);
+
+            localStorage.setItem('cartNumbers', productsNumber - cartItems[productsName].inCart);
+            delete cartItems[productsName];
+            localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+            
+            displayCart();
+            onLoadCartNumbers();
+
+        });
+    }
+}
+
+function manageQuantity(){
+    let decreaseButton = document.querySelectorAll('.decrease');
+    let increaseButton = document.querySelectorAll('.increase');
+
+    for(let i = 0; i < decreaseButton.length; i++){
+        decreaseButton[i].addEventListener('click', function(){
+            console.log('decrease Button');
+        })
+    }
+
+    for(let i = 0; i < increaseButton.length; i++){
+        increaseButton[i].addEventListener('click', function(){
+            console.log('increase Button');
+        })
+    }
+}
 
 onLoadCartNumbers();
 displayCart();
