@@ -41,18 +41,31 @@ function onLoadCartNumbers (){
     }
 }
 
-function cartNumbers(product){
+function cartNumbers(product, action){
     let productNumbers = localStorage.getItem('cartNumbers');
-    
     productNumbers = parseInt(productNumbers);
+    
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
 
-    if ( productNumbers ){
+    if( action == "decrease"){
+        localStorage.setItem('cartNumbers', productNumbers - 1);
+        document.querySelector('.header_icon span').textContent = productNumbers - 1;
+    }else if( productNumbers ){
         localStorage.setItem('cartNumbers', productNumbers + 1);
         document.querySelector('.header_icon span').textContent = productNumbers + 1;
     }else{
-        localStorage.setItem('cartNumbers', 1)
+        localStorage.setItem('cartNumbers', 1);
         document.querySelector('.header_icon span').textContent = 1;
     }
+
+    // if ( productNumbers ){
+    //     localStorage.setItem('cartNumbers', productNumbers + 1);
+    //     document.querySelector('.header_icon span').textContent = productNumbers + 1;
+    // }else{
+    //     localStorage.setItem('cartNumbers', 1)
+    //     document.querySelector('.header_icon span').textContent = 1;
+    // }
     setItem(product);
 }
 
@@ -166,16 +179,32 @@ function deleteButton (){
 function manageQuantity(){
     let decreaseButton = document.querySelectorAll('.decrease');
     let increaseButton = document.querySelectorAll('.increase');
+    let cartItems = localStorage.getItem('productsInCart');
+    let currentQuantity = 0;
+    let currentProduct = '';
+
+    // console.log(cartItems);
+    cartItems = JSON.parse(cartItems);
+    // console.log(cartItems);
 
     for(let i = 0; i < decreaseButton.length; i++){
         decreaseButton[i].addEventListener('click', function(){
-            console.log('decrease Button');
+            currentQuantity = decreaseButton[i].parentElement.querySelector('span').textContent;
+            currentProduct = decreaseButton[i].parentElement.previousElementSibling.querySelector('span').textContent.toLowerCase().trim();
+            // console.log(currentProduct);
+            if (cartItems[currentProduct].inCart > 1){
+            cartItems[currentProduct].inCart -= 1;
+            cartNumbers(cartItems[currentProduct], "decrease");
+            localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+            displayCart();
+        }
         })
     }
 
     for(let i = 0; i < increaseButton.length; i++){
         increaseButton[i].addEventListener('click', function(){
-            console.log('increase Button');
+            currentQuantity = increaseButton[i].parentElement.querySelector('span').textContent;
+            console.log(currentQuantity);
         })
     }
 }
