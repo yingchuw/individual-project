@@ -115,9 +115,8 @@ function addItemToCart(title){
 
 function purchaseClicked(){
     alert('感謝您的詢問, 客服人員將盡快與您聯繫')
-    var cartItems = document.getElementsByClassName('list-row')[0]
+    let cartItems = document.getElementsByClassName('.products')[0]
     while (cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild)
     }
-    // updateCartTotal()
 }

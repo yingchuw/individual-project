@@ -217,3 +217,23 @@ function manageQuantity(){
 
 onLoadCartNumbers();
 displayCart();
+
+
+// function purchaseClicked(){
+//     let sendBtn = document.querySelector('.sendBtn')
+//     for (let i = 0; i < sendBtn.length; i++){
+//         alert('感謝您的詢問, 客服人員將盡快與您聯繫')
+//         let cartItems = document.getElementsByClassName('.products')[0]
+//         while (cartItems.hasChildNodes()){
+//         cartItems.removeChild(cartItems.firstChild)
+//     }
+// }
+
+
+
+// var checkAge = document.getElementById("agree");
+// if(checkAge.checked){
+//   alert("有勾選");
+// }else{
+//   alert("未勾選年齡已滿18歲");
+// }
