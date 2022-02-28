@@ -105,8 +105,6 @@
 }
 
 @media screen and (max-width: 991px){
-    
-
     .index_about_text{
         width: 100%;
         margin: 0 auto;
@@ -144,15 +142,28 @@
 }
 
 .index_product_list li img{
+    height: 320px;
     border: 0;
-    margin: 30px;
+    margin: 50px;
     overflow: hidden;
     transform:scale(1);
     transition: all 1s ease-out;
 }
 
-.index_product_list li .item1{
-    height: 300px;
+.index_product_list li .item1,
+.index_product_list li .item4,
+.index_product_list li .item5{
+    height: 250px;
+}
+
+@media (max-width:991.98px) {
+    .indext_product_pic{
+        width: 100%;
+    }
+    
+    .index_product_list li img{
+        margin: 30px;
+    }
 }
 
 .index_product_list li p{
