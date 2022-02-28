@@ -204,7 +204,13 @@ function manageQuantity(){
     for(let i = 0; i < increaseButton.length; i++){
         increaseButton[i].addEventListener('click', function(){
             currentQuantity = increaseButton[i].parentElement.querySelector('span').textContent;
-            console.log(currentQuantity);
+            currentProduct = increaseButton[i].parentElement.previousElementSibling.querySelector('span').textContent.toLowerCase().trim();
+            // console.log(currentProduct);
+           
+            cartItems[currentProduct].inCart += 1;
+            cartNumbers(cartItems[currentProduct]);
+            localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+            displayCart();
         })
     }
 }

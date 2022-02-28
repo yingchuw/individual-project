@@ -14,59 +14,18 @@
    border-bottom: 1px solid #1C1C1C;
 }
 
-/* @media screen and (max-width: 991.98px) {
+@media (max-width:991.98px) {
+    .listContent{
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+@media (max-width:767.98px) {
     .listContent{
         width: 100%;
     }
 }
-
-@media screen and (max-width: 991.98px) {
-    .listContent{
-        width: 100%;
-    }
-}
-
-.listContent ul > .listTitle{
-    margin-bottom: 20px;
-}
-
-.listContent ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.listContent table .head{
-    padding: 20px;
-} 
-
-.listContent table .content .listProduct{
-    display: block;
-    width: 50px;
-}
-
-.listContent ul .listTitle p{
-    margin: 0 50px;
-}
-.listContent ul .listItem > .listProduct{
-    height: 100px;
-    margin: 0 50px;
-}
-
-.listContent ul .listItem p,
-.listContent ul .listItem input{
-    margin: 0 50px;
-}
-
-.listContent .fa-trash-alt{
-    font-size: 20px;
-}
-
-.listItem .listNum{
-    height: 40px;
-    width: 40px;
-} */
 
 .productsInList{
     width: 100%;
@@ -103,6 +62,12 @@
     margin: 0 20px;
 }
 
+@media (max-width:991.98px) {
+    .productsInList .products ion-icon{
+        font-size: 40px;
+    }
+}
+
 .productsInList .products img{  
     display: block;
     height: 100px;
@@ -114,6 +79,15 @@
     text-align: center;
 }
 
+@media (max-width:767.98px) {
+    .productsInList .products ion-icon{
+        font-size: 44px;
+    }
+
+    .productsInList .products img{
+        margin: 0 20px;
+    }
+}
 
 /* ------------------ list form -------------------*/
 .listForm{

@@ -135,15 +135,15 @@ h3 {
 .header .header_icon span{
     position: absolute;
     display: block;
-    top: 10px;
+    top: 5px;
     right: 10px;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     padding: 2px;
     border-radius: 100%;
     z-index: 1;
     font-size: 12px;
-    line-height: 1;
+    /* line-height: 1; */
     color: whitesmoke;
     background: #bf5b04;
 }
