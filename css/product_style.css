@@ -218,7 +218,8 @@
 @media screen and (max-width: 576.98px) {
   .itemContainer img {
     width: 100px;
-    margin-right: 30px;
+    margin: 0 auto;
+    /* margin-right: 30px; */
   }
 }
 
@@ -228,8 +229,12 @@
 
 @media screen and (max-width: 576.98px) {
   .itemContainer .itemInnerText {
-    width: 400px;
+    width: 380px;
     font-size: 14px;
+  }
+
+  .itemContainer .itemInnerText .itemTitle{
+    font-size: 2em;
   }
 }
 
