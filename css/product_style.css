@@ -193,6 +193,12 @@
   align-content: center; */
 }
 
+@media screen and (max-width: 767.98px) {
+  .itemContainer{
+    width: 100%;
+  }
+}
+
 #mainProduct {
   padding: 50px;
   margin: 0 auto;
@@ -358,7 +364,6 @@
   }
 }
 */
-
 
 .shop-item-btn{
   width: 150px;
